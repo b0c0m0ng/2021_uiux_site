@@ -6,7 +6,7 @@
 .toggle div{
     width: 24px;height: 3px;background: #aaa;
     border-radius:1.5px;
-    position: absolute;left: 50%;
+    position: absolute; left: 50%;
     margin-left: -12px;
 }
 .toggle div.bar1{top:8px}
