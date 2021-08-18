@@ -78,10 +78,10 @@ div.visualWrap{
 div.visualWrap .visualtop{
     width: 1600px; height: 259px; margin: 0 auto;
     _background-color: skyblue;
+    padding-top: 75px;
 }
 div.visualWrap .visualtop .visual{
     _background-color: plum; width: 701px; height: 259px;
-    padding: 70px 0;
 }
 div.visualWrap .visualtop .visual h5{
     font-size: 45px; color: white; font-weight:normal;
@@ -89,3 +89,21 @@ div.visualWrap .visualtop .visual h5{
 div.visualWrap .visualtop .visual h1{
     font-size: 66px; color: white;
 }
+
+
+
+
+
+div.contentWrap{_background: plum;}
+div.contentWrap ul{width: 1600px; margin: 0 auto;}
+div.contentWrap ul li:nth-child(1){
+    width: 75%; height: 450px;
+    background-image: url(../images/bg_02.png);background-repeat: no-repeat;
+}
+div.contentWrap ul li:nth-child(1) .box1{
+    _background: white; padding: 90px 140px;
+}
+div.contentWrap ul li:nth-child(1) .box1 h1{
+    font-size: 68px; color: #1550B6;
+}
+
