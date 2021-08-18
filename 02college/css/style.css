@@ -29,4 +29,19 @@ nav.util2 > ul li a{
 
 nav.util2 > ul li:nth-child(2) a{font-size: 20px; font-weight: bold;}
 
-div.logWrap{}
+div.logWrap{_background-color: skyblue; width: 100%;}
+div.logWrap .log{
+    width: 1600px;margin: 0 auto; height: 117px; _background: plum; 
+    position: relative;}
+div.logWrap .log img{position: absolute; left: 0; top: 50%; margin-top: -25px;}
+
+div.logWrap .log .menu{height: 117px; position: absolute; right: 180px;}
+div.logWrap .log .menu ul{}
+div.logWrap .log .menu ul li{float: left;}
+div.logWrap .log .menu ul li a{
+    display: block; text-align: center; line-height: 117px; padding: 0 30px;
+    font-size: 19px; font-weight: bold; color: #464646;
+}
+
+
+
