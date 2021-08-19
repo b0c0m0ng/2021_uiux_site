@@ -4,89 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>college</title>
+    <title>::한국대학교::</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="css/jquery.bxslider.css">    
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".slider1").bxSlider();
+            $(".slider2").bxSlider();
+        });
+    </script>
+
 </head>
 <body>
-
     <!-- header -->
     <header id="header">
         <div class="topWrap">
-            <div class="top">
-                <nav class="util">
-                <ul class="clearfix">
-                    <li><a href="#">대학교</a></li>
+            <div class="top clearfix">
+                <ul class="left clearfix">
+                    <li><a href="#" class="active">대학교</a></li>
                     <li><a href="#">입학안내</a></li>
                     <li><a href="#">대학원</a></li>
                 </ul>
-                </nav>
-                <nav class="util2">
-                    <ul class="clearfix">
+                <ul class="right clearfix">
                         <li><a href="#">글자크기</a></li>
-                        <li><a href="#">-</a></li>
-                        <li><a href="#">+</a></li>
+                        <li class="clearfix"><a href="#">-</a></li>
+                        <li class="clearfix"><a href="#">+</a></li>
                         <li><a href="#">찾아오시는길</a></li>
                         <li><a href="#">ENGLISH</a></li>
                         <li><a href="#">사이트맵</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
-        <div class="logWrap">
+            
+            <div class="logWrap">
                 <div class="log">
-                    <img src="./images/hanguk_logo.png" alt="">                    
-                    <div class="menu">
-                        <ul class="clearfix">
-                            <li><a href="#">대학소개</a></li>
-                            <li><a href="#">학과소개</a></li>
-                            <li><a href="#">학사안내</a></li>
-                            <li><a href="#">대학생활</a></li>
-                            <li><a href="#">학생지원센터</a></li>
-                        </ul>
-                   </div>
+                    <a href="index.html"><img src="./images/hanguk_logo.png" alt=""></a>                    
+                            <ul class="menu clearfix">
+                                <li><a href="#">대학소개</a></li>
+                                <li><a href="#">학과소개</a></li>
+                                <li><a href="#">학사안내</a></li>
+                                <li><a href="#">대학생활</a></li>
+                                <li><a href="#">학생지원센터</a></li>
+                            </ul>
                </div>
         </div>
     </header>
 
-    <!-- visual -->
-    <div class="visualWrap">
-        <div class="visualtop">
-            <div class="visual">
-                <h5>함께 나누며 세상을 이끌어</h5>
+    <!-- contenst -->
+    <div class="contents">
+        <section class="title">
+            <div class="visual clearfix">
+                <h4>함께 나누며 세상을 이끌어</h4>
                 <h1>세계로향하는 한국대학교</h1>
             </div>
-        </div>
-
-        <div class="contentWrap">
+        </section>
+        <div class="container">
             <ul class="clearfix">
-                <li class="clearfix">
-                    <div class="box1">
-                        <h1>한국에서</h1>
-                        <h1>시작하는</h1>
-                        <h1>새로운꿈</h1>
-                    </div>
+                <li>
+                    <ul class="slider1">
+                        <li><img src="images/slide01.png" alt=""></li>
+                        <li><img src="images/slide02.png" alt=""></li>
+                        <li><img src="images/slide03.png" alt=""></li>
+                    </ul>
                 </li>
 
-                <li>box2</li>
-                <li>box3</li>
-                <li>box4</li>
-                <li>box5</li>
-                <li>box6</li>
-                <li>box7</li>
-                <li>box8</li>
+
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>
+                    <ul class="slider2">
+                        <li><img src="images/banner01_01.png" alt=""></li>
+                        <li><img src="images/banner01_02.png" alt=""></li>
+                    </ul>
+                </li>
             </ul>
-
         </div>
+
     </div>
-
-
- 
-
+    
+    
 </body>
 </html>
