@@ -230,11 +230,19 @@ bottom: 30px;
 
 
 
-.content{background: white; width: 1200px; margin: 0 auto;}
-.content ul{height: 60px;}
-.content ul li:nth-child(1){float: left; width:25%}
-.content ul li:nth-child(2){float: right; width:75%}
+.content{_background: plum; width: 1200px; margin: 0 auto;}
+.content ul li{float: left; margin-right: 2px; height: 60px;}
+.content ul li:nth-child(1){background-color: #fff; float: left; width:295px;}
+.content ul li:nth-child(1) a{
+    display: block; text-align: center; line-height: 60px;
+    color: #001739; font-size: 19px;
+}
+.content ul li:nth-child(1) span{margin-left: 50px;}
 
+.content ul li:nth-child(2){background-color: #fff;;float: right; width:897px;}
+.content ul li:nth-child(2) a{display: block; text-align: center; line-height: 60px; color: #001739;}
+.content ul li:nth-child(2) p{font-size: 16px; margin-left: -20px;}
+.content ul li:nth-child(2) span{font-size: 15px; font-weight: lighter; margin-left: 25px;}
 
 
 
