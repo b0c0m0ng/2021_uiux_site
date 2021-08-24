@@ -250,14 +250,21 @@ bottom: 30px;
 
 
 /* footer */
-footer#footer{background: plum;}
-#footer .footerWrap{width: 1200px; margin: 0 auto; background: skyblue; height: 166px;}
-#footer .footerWrap .footer a{display: block; text-align: center;}
-#footer .footerWrap .footer2{
-    background: skyblue;float: right;
+footer#footer{}
+#footer .footerWrap{width: 1200px; _background: green; margin: 0 auto; height: 166px;}
+#footer .footerWrap .footer{float: left; _background: plum; margin-top: 60px;}
+#footer .footerWrap .footer2{float: left; margin-left: 150px; _background: orange;}
+#footer .footerWrap .footer2 ul{float: left; margin-top: 15px;}
+#footer .footerWrap .footer2 ul li a{position: relative;}
+#footer .footerWrap .footer2 ul li a:after{
+    content:"";display: block;position: absolute; top: 1px; right: -15px;
+    width: 2px; height: 14px; background: #464646;
 }
-#footer .footerWrap .footer2 ul{float: left;}
+#footer .footerWrap .footer2 ul li:last-child a:after{content:""; display: none;}
 
-#footer .footerWrap .footer2 ul li{float: left; background: green;}
-#footer .footerWrap .footer2 p{background: orange;}
+#footer .footerWrap .footer2 ul li{float: left; padding: 0 15px; color: #464646;}
+#footer .footerWrap .footer2 p{padding: 0 15px; line-height: 23px; color: #6A6A6A;}
+
+
+
 
