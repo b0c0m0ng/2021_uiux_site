@@ -63,13 +63,16 @@ body{
 
 .bx-wrapper .bx-controls-direction a {width: 0}
 
-.slider1{position: relative;}
+.swrap{position: relative;}
 .nextBtn,.prevBtn{position: absolute;top: 50%;margin-top: -50px;cursor: pointer;}
 .nextBtn{right: 0;}
 .prevBtn{left: 0;}
 
 
-
+.wrap{position: relative;}
+.upBtn,.underBtn{position: absolute; right: 0; cursor: pointer;}
+.upBtn{top: 0;right:}
+.underBtn{bottom: 0;}
 
 
 
@@ -278,12 +281,23 @@ body{
 }
 .content ul li:nth-child(1) span{margin-left: 50px;}
 
-.content ul li:nth-child(2){background-color: #fff;;float: right; width:897px;}
-.content ul li:nth-child(2) a{display: block; text-align: center; line-height: 60px; color: #001739;}
-.content ul li:nth-child(2) p{font-size: 16px; margin-left: -20px;}
-.content ul li:nth-child(2) span{font-size: 15px; font-weight: lighter; margin-left: 25px;}
+.content ul li:nth-child(2){background-color: #fff; float: right; width:897px;}
 
 
+
+
+.content ul li:nth-child(2) .slider3 .txt a{
+    float: left; margin-left: 30px;
+    text-align: center; line-height: 60px;
+    color: #001739; font-size: 16px;
+}
+
+.content ul li:nth-child(2) .slider3 .txt span{
+    float: left; margin-left: 40px;
+    text-align: center; line-height: 60px;
+    color: #001739; font-size: 15px;
+    font-weight: lighter;
+}
 
 
 

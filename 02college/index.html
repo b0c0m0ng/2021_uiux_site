@@ -21,19 +21,24 @@
 
     <script>
         $(document).ready(function(){
-            var myslide = $('.slider1').bxSlider({controls:false});
-
+            var myslide = $('.slider1').bxSlider({control:false});
+            $('.nextBtn').click(function(){myslide.goToNextSlide();});
+            $('.prevBtn').click(function(){myslide.goToPrevSlide();});
 
 
             $(".slider2").bxSlider();
 
 
+            var myslide1 = $(".slider3").bxSlider({pagerCustom:'.bxPager',mode:'vertical'});
+            $('.upBtn').click(function(){myslide1.goToNextSlide();});
+            $('.underBtn').click(function(){myslide1.goToPrevSlide();});
+
 
 
             $(".youtube").colorbox({
             iframe: true,
-            innerWidth:760,
-            innerHeight:515
+            innerWidth:700,
+            innerHeight:394
             });    
         });
 
@@ -112,64 +117,54 @@
 
 
 
-                <!-- box1 -->
+           <!-- box1 -->
                 <li>
-                    <ul class="slider1">
-                        <li class="hi">
-                            <img src="images/slide01.png" alt="">
-                            <div class="box1">
-                                <p>
-                                    <b>한국</b>에서<br>
-                                    <b>시작</b>하는<br>
-                                    새로운<b>꿈</b><br>
-                                </p>
-                                <a href="#">자세히 보기 ▶</a>
-                            </div>
-                            <div class="nextBtn">
-                                <img src="images/btn02.png" alt="">
-                            </div>
-                            <div class="prevBtn">
-                                <img src="images/btn01.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/slide02.png" alt="">
-                            <div class="box1">
-                                <p>
-                                    <b>한국</b>에서<br>
-                                    <b>시작</b>하는<br>
-                                    새로운<b>꿈</b><br>
-                                </p>
-                                <a href="#">자세히 보기 ▶</a>
-                            </div>
-                            <div class="nextBtn">
-                                <img src="images/btn02.png" alt="">
-                            </div>
-                            <div class="prevBtn">
-                                <img src="images/btn01.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/slide03.png" alt="">
-                            <div class="box1">
-                                <p>
-                                    <b>한국</b>에서<br>
-                                    <b>시작</b>하는<br>
-                                    새로운<b>꿈</b><br>
-                                </p>
-                                <a href="#">자세히 보기 ▶</a>
-                            </div>
-                            <div class="nextBtn">
-                                <img src="images/btn02.png" alt="">
-                            </div>
-                            <div class="prevBtn">
-                                <img src="images/btn01.png" alt="">
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="swrap">
+                        <ul class="slider1">
+                            <li>
+                                <img src="images/slide01.png" alt="">
+                                <div class="box1">
+                                    <p>
+                                        <b>한국</b>에서<br>
+                                        <b>시작</b>하는<br>
+                                        새로운<b>꿈</b><br>
+                                    </p>
+                                    <a href="#">자세히 보기 ▶</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/slide02.png" alt="">
+                                <div class="box1">
+                                    <p>
+                                        <b>한국</b>에서<br>
+                                        <b>시작</b>하는<br>
+                                        새로운<b>꿈</b><br>
+                                    </p>
+                                    <a href="#">자세히 보기 ▶</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/slide03.png" alt="">
+                                <div class="box1">
+                                    <p>
+                                        <b>한국</b>에서<br>
+                                        <b>시작</b>하는<br>
+                                        새로운<b>꿈</b><br>
+                                    </p>
+                                    <a href="#">자세히 보기 ▶</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="nextBtn">
+                            <img src="images/btn02.png" alt="">
+                        </div>
+                        <div class="prevBtn">
+                            <img src="images/btn01.png" alt="">
+                        </div>
+                    </div>   
+                </li>
 
-
-
+                    
 
 
             <!-- box2 -->
@@ -216,11 +211,6 @@
                 </li>
 
 
-
-
-
-
-
             <!-- box4 -->
                 <li>
                     <div class="box4">
@@ -253,8 +243,6 @@
                 </li>                
 
 
-
-
                 <!-- box5 -->
                 <li>
                     <div class="box5">
@@ -275,9 +263,7 @@
                             </ul>
                         </div>
                     </div>
-                </li>                
-                
-                
+                </li>                             
                 
                 
                 <!-- box6 -->
@@ -288,18 +274,11 @@
                 </li>
 
 
-
-
-
-
                 <!-- box7 -->
                 <li>
                     <div class="box7">
                         <a href="https://www.youtube.com/embed/hsLP5SLsUY0" class="youtube"> ▶ </a>
                 </li>
-
-
-
 
 
                 <!-- box8 -->
@@ -335,17 +314,27 @@
                         <p>학사일정 <span>〈 2016 07 〉</span></p>
                     </a>
                 </li>
-                <li>
-                    <div class="bxPager clearfix">
-                        <a href="#" data-slide-index="0">2016 - 1학기 성적 열람 및 상담 신청</a><span>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</span>
-                        <a href="#" data-slide-index="1">2017 - 1학기 성적 열람 및 상담 신청</a>
-                        <a href="#" data-slide-index="2">2018 - 1학기 성적 열람 및 상담 신청</a>
-                        <a href="#" data-slide-index="3">2019 - 1학기 성적 열람 및 상담 신청</a>
-                    </div>
 
-                    <a href="#">
-                        <p>2016 - 1학기 성적 열람 및 상담 신청 <span>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</span></p>
-                    </a>
+
+                <li>
+                    <div class="wrap">
+                        <ul class="slider3">
+                                <li class="txt clearfix">
+                                    <a href="#">2016 - 1학기 성적 열람 및 상담 신청</a>
+                                    <span>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</span>
+                                </li>
+                                <li class="txt clearfix">
+                                    <a href="#">2021 - 1학기 성적 열람 및 상담 신청</a>
+                                    <span>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</span>
+                                </li>
+                        </ul>
+                        <div class="upBtn">
+                            <img src="images/control01.png" alt="">
+                        </div>
+                        <div class="underBtn">
+                            <img src="images/control02.png" alt="">
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
