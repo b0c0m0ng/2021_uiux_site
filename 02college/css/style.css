@@ -60,10 +60,27 @@ body{
     margin-bottom: 0;
 }
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {bottom: 30px;}
+.bx-wrapper .bx-controls-direction a {display: none}
+
+
+.swrap .bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.swrap .bx-wrapper .bx-pager.bx-default-pager a.active, 
+.swrap .bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background: #0043AE;
+}
+
+.swrap2 .bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.swrap2 .bx-wrapper .bx-pager.bx-default-pager a.active, 
+.swrap2 .bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background: #F74237;
+}
+.swrap2 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+    right: -400px;
+    top: 0;
+}
 
 
 
-.bx-wrapper .bx-controls-direction a {width: 0}
 
 .swrap{position: relative;}
 .nextBtn,.prevBtn{position: absolute;top: 50%;margin-top: -50px;cursor: pointer;}

@@ -21,13 +21,12 @@
 
     <script>
         $(document).ready(function(){
-            var myslide = $('.slider1').bxSlider({control:false});
+            var myslide = $('.slider1').bxSlider({controls:false});
             $('.nextBtn').click(function(){myslide.goToNextSlide();});
             $('.prevBtn').click(function(){myslide.goToPrevSlide();});
 
             $('.slider2').bxSlider({
         });
-
 
 
             var myslide1 = $(".slider3").bxSlider({pagerCustom:'.bxPager',mode:'vertical'});
@@ -284,22 +283,24 @@
 
                 <!-- box8 -->
                 <li>
-                    <ul class="slider2">
-                        <li><img src="images/banner01_01.png" alt="">
-                            <div class="box8">
-                                    <h3>2017년 신 / 편입생 2차 모집</h3>
-                                    <h1><b>2017.7.1 ~ 7.10</b></h1>
-                                <a href="#">입학사전예약 ▶</a>
-                            </div>
-                        </li>
-                        <li><img src="images/banner01_02.png" alt="">
-                            <div class="box8">
-                                    <h3>2017년 신 / 편입생 2차 모집</h3>
-                                    <h1><b>2017.7.1 ~ 7.10</b></h1>
-                                <a href="#">입학사전예약 ▶</a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="swrap2">
+                        <ul class="slider2">
+                            <li><img src="images/banner01_01.png" alt="">
+                                <div class="box8">
+                                        <h3>2017년 신 / 편입생 2차 모집</h3>
+                                        <h1><b>2017.7.1 ~ 7.10</b></h1>
+                                    <a href="#">입학사전예약 ▶</a>
+                                </div>
+                            </li>
+                            <li><img src="images/banner01_02.png" alt="">
+                                <div class="box8">
+                                        <h3>2017년 신 / 편입생 2차 모집</h3>
+                                        <h1><b>2017.7.1 ~ 7.10</b></h1>
+                                    <a href="#">입학사전예약 ▶</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
