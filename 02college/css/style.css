@@ -296,7 +296,7 @@ body{
 .content ul li:nth-child(1){background-color: #fff; float: left; width:295px;}
 .content ul li:nth-child(1) a{
     display: block; text-align: center; line-height: 60px;
-    color: #001739; font-size: 19px;
+    color: #001739; font-size: 19px; font-weight: bold;
 }
 .content ul li:nth-child(1) span{margin-left: 50px;}
 
@@ -309,13 +309,13 @@ body{
     float: left; margin-left: 30px;
     text-align: center; line-height: 60px;
     color: #001739; font-size: 16px;
+    font-weight: bold;
 }
 
 .content ul li:nth-child(2) .slider3 .txt span{
     float: left; margin-left: 40px;
     text-align: center; line-height: 60px;
     color: #001739; font-size: 15px;
-    font-weight: lighter;
 }
 
 
@@ -334,8 +334,8 @@ footer#footer{}
 }
 #footer .footerWrap .footer2 ul li:last-child a:after{content:""; display: none;}
 
-#footer .footerWrap .footer2 ul li{float: left; padding: 0 15px; color: #464646;}
-#footer .footerWrap .footer2 p{padding: 0 15px; line-height: 23px; color: #6A6A6A;}
+#footer .footerWrap .footer2 ul li{float: left; padding: 0 15px; color: #464646; font-weight: bold;}
+#footer .footerWrap .footer2 p{padding: 0 15px; line-height: 23px; color: #6A6A6A; font-weight: bold}
 
 
 
