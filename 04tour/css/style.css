@@ -1,0 +1,17 @@
+@charset "utf-8";
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+}
+
+
+.topWrap{
+    background-image: url(../images/bg01.png); background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.topWrap img{float: left; line-height: 90px; margin-left: 90px;}
+.topWrap .top{float: left;}
+.topWrap .top p{color: white; font-size: 20px; }
+.topWrap .top .sns li{float: left;}
+
+
