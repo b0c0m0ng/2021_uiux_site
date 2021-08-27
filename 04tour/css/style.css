@@ -57,7 +57,7 @@ input[type="text"]:focus{outline: none;}
 .top2 ul{margin: 0 auto; width: 980px;}
 .top2 ul li{float: left; border-right: 1px solid #ddd;width: calc(100% / 6);}
 .top2 ul li:nth-child(1){border-left: 1px solid #ddd;}
-.top2 ul li:nth-child(4){background: url(../images/n.png) no-repeat 90% 50%}
+.top2 ul li:nth-child(4){background: url(../images/n.png) no-repeat 80% 50%}
 .top2 ul li a{
     display: block; height: 61px; line-height: 61px;
     font-size: 18px; font-weight: bold; color: #152630;
