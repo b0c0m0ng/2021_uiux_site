@@ -63,7 +63,7 @@ input[type="text"]:focus{outline: none;}
     font-size: 18px; font-weight: bold; color: #152630;
     text-align: center; 
 }
-.top2 ul li a:hover{background: #ccc;}
+.top2 ul li a:hover{background: #777; color:  white;}
 
 
 
