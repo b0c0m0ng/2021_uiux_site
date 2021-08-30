@@ -14,6 +14,15 @@
     
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    
+    <script>
+        // $(document).ready(function(){
+        //     $('.slider').bxSlider({
+        //         pagerCustom:'.bxPager',
+        //         mode:'vertical'
+        //     });
+        // });
+    </script>
 </head>
 <body>
     <header id="header">
@@ -68,5 +77,112 @@
             </ul>
         </div>
     </header>
+
+
+
+
+<!-- visual -->
+    <div class="visualWrap">
+        <div class="visual">
+            <div class="choose">
+                <ul class="slider">
+                    <li>
+                        <form action="#" class="form">
+                            <fieldset>
+                                <legend class="blind">여행일정</legend>
+                                <ul>
+                                    <li>
+                                        <label for="golo">가고싶은 나라를 선택하세요.</label>
+                                        <select name="golo" id="golo">
+                                            <option value="">선택하세요</option>
+                                            <option value="미국">미국</option>
+                                            <option value="일본">일본</option>
+                                            <option value="중국">중국</option>
+                                        </select>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">
+                                            <label for="sdate">출발일</label>
+                                            <input type="date" id="sdate">
+                                        </div>
+                                        <div class="right">
+                                            <label for="edate">도착일</label>
+                                            <input type="date" id="edate">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="left">
+                                            <label for="grade">좌석등급</label>
+                                            <select name="grade" id="grade">
+                                                <option value="일반석">일반석</option>
+                                                <option value="비지니스">비지니스</option>
+                                                <option value="이코노믹">이코노믹</option>
+                                            </select>
+                                        </div>
+                                        <div class="right1">
+                                            <label for="num">성인</label>
+                                            <input type="number" id="num" placeholder="1">
+                                        </div>
+                                        <div class="right1">
+                                            <label for="num">아이</label>
+                                            <input type="number" id="num" placeholder="2">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <input type="submit" value="검색하기" class="btn-submit">
+                        </form>
+                    </li>
+                </ul>
+
+                <div class="sliderPager">
+                    <div class="bxPager clearfix">
+                        <a href="#" data-slide-index="0">공항예약</a>
+                        <a href="#" data-slide-index="1">호텔예약</a>
+                        <a href="#" data-slide-index="2">렌트카</a>
+                        <a href="#" data-slide-index="3">휴양지</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="txt">
+                <h1> TRAVEL GO</h1>
+                <p>지금, 여행이 떠나고 싶다면?</p><br>
+                <p>하이미디어와 여행을 떠나자!</p>
+            </div>
+
+
+
+
+            <div class="box">
+                <div class="box1">
+                    <div class="memo">
+                        <p>프랑스</p>
+                        <a href="#"> > </a>
+                        <p>￦1,900,000~</p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="memo2">
+                        <p>일본</p>
+                        <a href="#"> > </a>
+                        <p>￦890,000~</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
 </body>
 </html>
