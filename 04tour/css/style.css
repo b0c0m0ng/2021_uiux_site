@@ -4,7 +4,6 @@ body{
     font-size: 14px;
 }
 
-
 .topWrap{background: #0763a2 url(../topbg01.png) no-repeat center;}
 .topWrap .top{
     width: 980px; margin: 0 auto; color: white; position: relative; height: 90px;
@@ -24,6 +23,7 @@ body{
     text-indent: -9999px; 
     top: 40%; transform: translateX(40%) translateY(-15%);
 }
+
 
 .searchBtn{
     position: absolute;
@@ -75,10 +75,11 @@ input[type="text"]:focus{outline: none;}
 /* visual */
 .visualWrap{
     background: #A7D0FA url(../images/visual_bg02.png) no-repeat center;
+    position: relative;
 }
 .visual{width: 980px; margin: 0 auto;}
 .choose{
-    background: #fff; position: relative; width: 500px;
+    background: #fff; position: relative; width: 500px; margin-bottom: 20px;
 }
 
 
@@ -132,8 +133,53 @@ fieldset{border: 0;}
 
 
 
-.txt{float: right; background: yellow;}
+.txt{
+    float: right; _background: yellow; 
+    position: absolute;top: 70px; right: 500px;
+}
+
+.txt h1{font-size: 65px; margin-bottom: 20px;}
+.txt h1:after{
+    content:"";width: 95px;height: 4px;
+    background: #000;display: block;
+    position: absolute;top:80px; right: 20px;
+    border-radius:2px
+}
+
+.txt p{font-size: 30px;margin-bottom: 5px;}
 
 
-.box{background: plum;}
-.box .box1{background: green;}
+
+
+/* box */
+.box{background: green; height: 250px; width: 500px;}
+
+.box .box1{float: left; position: relative;}
+.box .box1 .memo{
+    position: absolute; bottom: 0; width: 100%;
+    background: #152630;
+}
+.box .box1 .memo p{
+    position: absolute; right: 40px; bottom: 15px;
+    font-size: 17px; color: #6DBD62;
+}
+.box .box1 .memo a{
+    float: left; color: white; font-size: 17px; line-height: 50px;
+    margin-left: 20px;
+}
+
+
+
+.box .box2{float: right; position: relative;}
+.box .box2 .memo{
+    position: absolute; bottom: 0; width: 100%;
+    background: #152630;
+}
+.box .box2 .memo p{
+    position: absolute; right: 40px; bottom: 15px;
+    font-size: 17px; color: #6DBD62;
+}
+.box .box2 .memo a{
+    float: left; color: white; font-size: 17px; line-height: 50px;
+    margin-left: 20px;
+}
