@@ -74,8 +74,8 @@ input[type="text"]:focus{outline: none;}
 
 /* visual */
 .visualWrap{
-    background: #A7D0FA url(../images/visual_bg02.png) no-repeat center;
-    position: relative;
+    background: url(../images/visual_bg02.png) no-repeat center;
+    position: relative; background-size: cover;
 }
 .visual{width: 980px; margin: 0 auto;}
 .choose{
@@ -146,15 +146,15 @@ fieldset{border: 0;}
     border-radius:2px
 }
 
-.txt p{font-size: 30px;margin-bottom: 5px;}
+.txt p{font-size: 30px;}
 
 
 
 
 /* box */
-.box{background: green; height: 250px; width: 500px;}
+.box{_background: green; height: 250px; margin-bottom: 3px;}
 
-.box .box1{float: left; position: relative;}
+.box .box1{float: left; position: relative; margin-right: 12px;}
 .box .box1 .memo{
     position: absolute; bottom: 0; width: 100%;
     background: #152630;
@@ -170,16 +170,100 @@ fieldset{border: 0;}
 
 
 
-.box .box2{float: right; position: relative;}
+.box .box2{float: left; position: relative;}
 .box .box2 .memo{
     position: absolute; bottom: 0; width: 100%;
     background: #152630;
 }
 .box .box2 .memo p{
-    position: absolute; right: 40px; bottom: 15px;
+    position: absolute; right: 60px; bottom: 15px;
     font-size: 17px; color: #6DBD62;
 }
 .box .box2 .memo a{
     float: left; color: white; font-size: 17px; line-height: 50px;
     margin-left: 20px;
 }
+
+
+/* banner */
+.banner{
+    _background: plum; height: 250px; width: 980px;
+    margin-bottom: 20px; margin: 0 auto;
+}
+.banner ul li{float: left; width: calc(980px / 4)}
+
+
+/* 1 */
+.banner ul li:nth-child(1){
+    position: relative;
+}
+.banner ul li:nth-child(1) .title{
+    position: absolute; bottom: 0; width: 233px;
+    background: #529351; padding: 15px;
+}
+.banner ul li:nth-child(1) .title h3{
+    color: white; font-size: 16px; margin-bottom: 5px;
+}
+
+
+/* 2 */
+.banner ul li:nth-child(2){
+    position: relative;
+}
+.banner ul li:nth-child(2) .title{
+    position: absolute; bottom: 0; width: 233px;
+    background: #152630; padding: 15px;
+}
+.banner ul li:nth-child(2) .title h3{
+    color: white; font-size: 16px; margin-bottom: 5px;
+}
+
+
+
+
+/* 3 */
+.banner ul li:nth-child(3){
+    position: relative;
+}
+.banner ul li:nth-child(3) h1{ 
+    position: absolute; top: 10px; right: 90px;
+    font-size: 20px; color: white;
+}
+.banner ul li:nth-child(3) .title{
+    position: absolute; bottom: 0; width: 233px;
+    background: rgba(0,0,0,0.8); padding: 15px;
+}
+.banner ul li:nth-child(3) .title h3{
+    color: white; font-size: 16px;
+}
+.banner ul li:nth-child(3) .title p{
+    color: #999; font-size: 15px;
+}
+
+
+/* 4 */
+.banner ul li:nth-child(4){
+    position: relative;
+}
+.banner ul li:nth-child(4) .title{
+    position: absolute; bottom: 0; width: 233px;
+    background: #44619D; padding: 15px;
+}
+.banner ul li:nth-child(4) .title h3{
+    color: white; font-size: 16px;
+}
+.banner ul li:nth-child(4) .title p{
+    color: #999; font-size: 15px;
+}
+
+
+
+
+
+
+
+/* content */
+.content{width: 980px; margin: 0 auto;}
+.content ul li{float: left; width: calc(980px / 4)}
+
+
