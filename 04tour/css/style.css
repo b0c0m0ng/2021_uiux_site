@@ -77,16 +77,19 @@ input[type="text"]:focus{outline: none;}
     background: url(../images/visual_bg02.png) no-repeat center;
     position: relative; background-size: cover;
 }
-.visual{width: 980px; margin: 0 auto;}
-.choose{
-    background: #fff; position: relative; width: 500px; margin-bottom: 20px;
-}
+.visual{width: 980px; margin: 0 auto; width: 980px;}
+
+.choose{float: left; background: #fff;}
+.choose .slider{float: left;}
+
 
 
 
 fieldset{border: 0;}
 .blind{display: block;position: absolute;left: 0;top: -9999px;}
-.form{width: 400px;margin: 0 auto;}
+
+/* .form{width: 400px;margin: 0 auto;} */
+
 .form label{display: block;padding: 10px 0;}
 .form select{
     width: 100%;height: 40px;font-size: 1em;
@@ -131,12 +134,11 @@ fieldset{border: 0;}
 }
 .sliderPager .bxPager a.active{background: white;} */
 
+.slider{}
 
 
-.txt{
-    float: right; _background: yellow; 
-    position: absolute;top: 70px; right: 500px;
-}
+
+.txt{float: right;}
 
 .txt h1{font-size: 65px; margin-bottom: 20px;}
 .txt h1:after{
@@ -152,7 +154,7 @@ fieldset{border: 0;}
 
 
 /* box */
-.box{_background: green; height: 250px; margin-bottom: 3px;}
+.box{_background: green; height: 250px; margin-bottom: 10px;}
 
 .box .box1{float: left; position: relative; margin-right: 12px;}
 .box .box1 .memo{
@@ -187,10 +189,11 @@ fieldset{border: 0;}
 
 /* banner */
 .banner{
-    _background: plum; height: 250px; width: 980px;
-    margin-bottom: 20px; margin: 0 auto;
+    _background: plum; width: 980px;
+    margin: 0 auto;
 }
-.banner ul li{float: left; width: calc(980px / 4)}
+.banner ul li{float: left; width: calc((100% - 60px) / 4); margin-right: 20px;}
+.banner ul li:last-child{margin-right: 0; margin-bottom: 20px;}
 
 
 /* 1 */
@@ -264,54 +267,52 @@ fieldset{border: 0;}
 
 /* content */
 .content{width: 980px; margin: 0 auto;}
-.content ul li{float: left; width: calc(980px / 4)}
+.content ul li{float: left; width: calc((100% - 60px) / 4); margin-right: 20px;}
+.content ul li:last-child{margin-right: 0;}
 
 
 
+
+
+
+/* plus1 */
 .plus1{
-    width: 100%; height: 240px; position: relative;
+    width:233px; height: 240px; position: relative;
     transition:0.3s; overflow: hidden;
-    margin: 0 auto;
 }
+.ic{
+    position: absolute; display: block; text-align: center;
+    top: 30px; left: 30px; transition: 0.3s;
+}
+.ic img{margin-left: 15px;}
+.ic h1{color: white; font-size: 19px; margin-bottom: 10px; margin-left: 5px;}
+.ic p{color: white; font-size: 14px;}
 
 
 .plus1 img{
     position: absolute;
-    left: 0; top: 0;
     transition:0.3s;
 }
 
-.plus1 .bg{
-    position: absolute;
-    top: 30px; right: 40px
-}
-.plus1 .bg img{margin-left: 30px;}
-.plus1 .bg h1{
-    color: white; font-size: 19px;
-    margin-bottom: 15px; margin-left: 65px;
-}
-.plus1 .bg p{
-    color: white; font-size: 14px;
-}
 .plus1:hover img{
-    transform:scale(1);
+    transform:scale(1.1);
 }
+.plus1:hover .ic{top: 25px;}
 
+.plus1 .bg{
+    width: 100%;height: 100%;
+    position: relative;
+    opacity:0.1;transition:0.3s;background: #000;
+}
+.plus1:hover .bg{opacity:0.5}
 
 .plus1 .circle{
     position: absolute;
-    width: 30px;height: 30px;_background: pink;
-    left:50%;top:50%;transform:translate(-50%,0%);
-    transition:0.3s;border: 2px solid #fff;
-    border-radius:50%
-}
-.plus1:hover .circle{
-    transform:translate(-50%,0%) rotate(90deg)
-}
-
-@keyframes ani{
-    from{transform:translate(-50%,-50%)}
-    to{transform:translate(-50%,-50%) rotate(180deg)}
+    width: 30px;height: 30px;
+    left:50%;top:50%;transform:translate(-50%,-50%);
+    transition:0.3s;border: 3px solid #fff;
+    border-radius:50%;
+    animation-duration: 0.3s; 
 }
 
 .circle .bar1,
@@ -322,9 +323,94 @@ fieldset{border: 0;}
 
 .circle .bar1{transform:translate(-50%,-50%) rotate(90deg)}
 
+.plus1:hover .circle{
+    transform:translate(-50%,-50%) rotate(90deg);
+}
 
 
 
+
+/* plus2 */
+.plus2{
+    width:233px; height: 240px; position: relative;
+    transition:0.3s; overflow: hidden;
+}
+.ic1{
+    position: absolute; display: block; text-align: center;
+    bottom: 30px; left: 30px; transition: 0.3s;
+}
+.ic1 img{margin-left: 15px;}
+.ic1 h1{color: white; font-size: 19px; margin-bottom: 10px; margin-left: 5px;}
+.ic1 p{color: white; font-size: 14px;}
+
+
+.plus2 img{
+    position: absolute;
+    transition:0.3s;
+}
+
+.plus2:hover img{
+    transform:scale(1.1);
+}
+.plus2:hover .ic1{bottom: 25px;}
+
+.plus2 .bg{
+    width: 100%;height: 100%;
+    position: relative;
+    opacity:0.5;transition:0.3s;background: #000;
+}
+.plus2:hover .bg{opacity:0.8}
+
+.plus2 .circle{
+    position: absolute;
+    width: 30px;height: 30px;
+    left:50%;top:50%;transform:translate(-50%,-50%);
+    transition:0.3s;border: 3px solid #fff;
+    border-radius:50%;
+    animation-duration: 0.3s; 
+}
+
+
+
+/* plus4 */
+.plus4{
+    width:233px; height: 240px; position: relative;
+    transition:0.3s; overflow: hidden;
+}
+.ic{
+    position: absolute; display: block; text-align: center;
+    top: 30px; left: 30px; transition: 0.3s;
+}
+.ic img{margin-left: 20px; margin-top: -5px;}
+.ic h1{color: white; font-size: 19px; margin-bottom: 10px; margin-left: 5px;}
+.ic p{color: white; font-size: 14px;}
+
+
+.plus4 img{
+    position: absolute;
+    transition:0.3s;
+}
+
+.plus4:hover img{
+    transform:scale(1.1);
+}
+.plus4:hover .ic{top: 25px;}
+
+.plus4 .bg{
+    width: 100%;height: 100%;
+    position: relative;
+    opacity:0.4;transition:0.3s;background: #000;
+}
+.plus4:hover .bg{opacity:0.7}
+
+.plus4 .circle{
+    position: absolute;
+    width: 30px; height: 30px;
+    left:50%;top:50%;transform:translate(-50%,-50%);
+    transition:0.3s;border: 3px solid #fff;
+    border-radius:50%;
+    animation-duration: 0.3s; 
+}
 
 
 
