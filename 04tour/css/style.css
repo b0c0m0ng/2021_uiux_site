@@ -4,13 +4,12 @@ body{
     font-size: 14px;
 }
 
+
+/* header */
 .topWrap{background: #0763a2 url(../topbg01.png) no-repeat center;}
 .topWrap .top{
     width: 980px; margin: 0 auto; color: white; position: relative; height: 90px;
 }
-    
-
-
 
 .searchInp{
     width: 290px; height: 30px; border-radius: 25px;
@@ -27,7 +26,7 @@ body{
 
 .searchBtn{
     position: absolute;
-    top: 50%; transform: translateX(610%) translateY(-55%);
+    top: 50%; transform: translateX(-55px) translateY(-55%);
     width: 40px; height: 40px;
     border: 0px solid #aaa; 
     border-radius: 50%;
@@ -54,7 +53,8 @@ input[type="text"]:focus{outline: none;}
 
 
 /* menu */
-.top2{background: #FAFAFA; border-bottom: 5px solid #0E73A7;}
+.top2{
+    background: #FAFAFA; border-bottom: 5px solid #0E73A7;}
 .top2 ul{margin: 0 auto; width: 980px;}
 .top2 ul li{float: left; border-right: 1px solid #ddd;width: calc(100% / 6);}
 .top2 li.active{background: #777;}
@@ -79,28 +79,33 @@ input[type="text"]:focus{outline: none;}
     background: url(../images/visual_bg02.png) no-repeat center;
     position: relative; background-size: cover;
 }
-.visual{width: 980px; margin: 0 auto; width: 980px;}
+.visual{width: 980px; margin: 0 auto;}
+.visual .visualleft{float: left; padding-top: 20px;width: 500px;}
+.visual .visualright{float:right;}
 
-.choose{float: left; background: #fff;}
-.choose .slider{float: left;}
-
+.visual .visualtop{background: #fff; margin-bottom: 20px;position: relative;}
 
 
 
 fieldset{border: 0;}
 .blind{display: block;position: absolute;left: 0;top: -9999px;}
 
-/* .form{width: 400px;margin: 0 auto;} */
 
-.form label{display: block; padding: 10px 0;}
+
+
+
+
+/* form */
+.form{float: right; padding: 20px;}
+.form label{display: block; padding: 15px 0;}
 .form select{
-    width: 100%;height: 40px;font-size: 1em;
+    width: 100%; height: 40px;font-size: 1em;
     border-radius:5px; text-indent: 10px;
 }
 
 .form .left,
-.form .right{width: 195px;float: left;}
-.form .right1{width:87px;float: right;}
+.form .right{width: 140px;float: left;}
+.form .right1{width:60px; float: right; }
 
 
 .form .left,
@@ -125,66 +130,64 @@ fieldset{border: 0;}
 
 
 
+/* slider */
 
-/* .sliderPager{position: absolute; top: 0;width: 130px;height: 80px;}
-.sliderPager .bxPager{height: 100%;background: #000;}
+.sliderPager{position: absolute; top: 20px; width: 140px; height: 100%;}
+.sliderPager .bxPager{height: 100%; background: white;}
 .sliderPager .bxPager a{
-    display: block;
-    height:25%;
-    display: flex;justify-content: center;align-items: center;
+    display: block; height:25%;
+    display: flex; justify-content: center; align-items: center;
     text-align: center;line-height: 80px;
     background:#006599;
 }
-.sliderPager .bxPager a.active{background: white;} */
-
-.slider{}
+.sliderPager .bxPager a.active{background: white;}
 
 
 
-.txt{float: right;}
 
-.txt h1{font-size: 65px; margin-bottom: 20px;}
-.txt h1:after{
-    content:"";width: 95px;height: 4px;
+
+.visualright{_background: #fff; padding-top: 100px;}
+.visualright h1{font-size: 65px; margin-bottom: 20px;}
+.visualright h1:after{
+    content:"";width: 90px;height: 4px;
     background: #000;display: block;
-    position: absolute;top:80px; right: 20px;
+    position: absolute;  right: 470px;
     border-radius:2px
 }
 
-.txt p{font-size: 30px;}
-
+.visualright p{font-size: 30px;}
 
 
 
 /* box */
-.box{_background: green; height: 250px; margin-bottom: 10px;}
+.visualbottom{float: left; margin-bottom: 20px;}
 
-.box .box1{float: left; position: relative; margin-right: 12px;}
-.box .box1 .memo{
+.visualbottom .box1{float: left; position: relative; margin-right: 20px;}
+.visualbottom .box1 .memo{
     position: absolute; bottom: 0; width: 100%;
     background: #152630;
 }
-.box .box1 .memo p{
+.visualbottom .box1 .memo p{
     position: absolute; right: 40px; bottom: 15px;
     font-size: 17px; color: #6DBD62;
 }
-.box .box1 .memo a{
+.visualbottom .box1 .memo a{
     float: left; color: white; font-size: 17px; line-height: 50px;
     margin-left: 20px;
 }
 
 
 
-.box .box2{float: left; position: relative;}
-.box .box2 .memo{
+.visualbottom .box2{float: left; position: relative;}
+.visualbottom .box2 .memo{
     position: absolute; bottom: 0; width: 100%;
     background: #152630;
 }
-.box .box2 .memo p{
+.visualbottom .box2 .memo p{
     position: absolute; right: 60px; bottom: 15px;
     font-size: 17px; color: #6DBD62;
 }
-.box .box2 .memo a{
+.visualbottom .box2 .memo a{
     float: left; color: white; font-size: 17px; line-height: 50px;
     margin-left: 20px;
 }
@@ -192,9 +195,9 @@ fieldset{border: 0;}
 
 /* banner */
 .banner{
-    _background: plum; width: 980px;
-    margin: 0 auto;
+    background: plum; width: 980px; margin: 0 auto;
 }
+.banner ul{float: left;}
 .banner ul li{float: left; width: calc((100% - 60px) / 4); margin-right: 20px;}
 .banner ul li:last-child{margin-right: 0; margin-bottom: 20px;}
 
@@ -462,7 +465,6 @@ body.sub{background: #ccc;}
     background-image: url(../images/subimg01.jpg);
 }
 .subContent.company .container{
-    border: 1px solid #555;
     border-top: 5px solid #0664a1;
     border-bottom: 5px solid #0664a1;
     position: relative; top: -50px;
