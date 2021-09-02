@@ -57,6 +57,8 @@ input[type="text"]:focus{outline: none;}
 .top2{background: #FAFAFA; border-bottom: 5px solid #0E73A7;}
 .top2 ul{margin: 0 auto; width: 980px;}
 .top2 ul li{float: left; border-right: 1px solid #ddd;width: calc(100% / 6);}
+.top2 li.active{background: #777;}
+
 .top2 ul li:nth-child(1){border-left: 1px solid #ddd;}
 .top2 ul li:nth-child(4){background: url(../images/n.png) no-repeat 80% 50%}
 .top2 ul li a{
@@ -64,7 +66,7 @@ input[type="text"]:focus{outline: none;}
     font-size: 18px; font-weight: bold; color: #152630;
     text-align: center; 
 }
-.top2 ul li a:hover{background: #777; color:  white;}
+.top2 ul li a:hover{background: #777;}
 
 
 
@@ -416,10 +418,86 @@ fieldset{border: 0;}
 
 
 
+/* subpage */
+.subContent .subImg{
+    height: 300px; background: skyblue;
+    display: flex; justify-content: center; align-items: center;
+    background-repeat: no-repeat;background-position: center;
+    background-size: cover;
+}
+.subContent .container{width: 980px; margin: 0 auto; padding: 30px 0;}
+.subContent .container img{display: block; margin: 0 auto;}
+.subContent .location{width: 860px; margin: 0 auto; font-size: 14px; margin-bottom: 16px;}
+
+.subContent .subImgTitle{text-align: center; transform: translateY(-30px);}
+.subContent .subImgTitle h3{font-size: 2em; text-shadow: 0,0 10px white;}
+.subContent .subImgTitle p{text-shadow: 0, 0 10px white;}
+.subContent .subImgTitle h3::after{
+    content: "";display: block; width: 80%; height: 2px;
+    background: #fff; margin: 0 auto; margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+/* citytour */
+.subContent.cityTour .subImg{
+    background-image: url(../images/subimg02.jpg);
+}
+
+
+
+
+
+
+
+
+/* company */
+body.sub{background: #ccc;}
+.subContent.company .subImg{
+    background-image: url(../images/subimg01.jpg);
+}
+.subContent.company .container{
+    border: 1px solid #555;
+    border-top: 5px solid #0664a1;
+    border-bottom: 5px solid #0664a1;
+    position: relative; top: -50px;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer */
-.footerWrap{width: 980px; margin: 0 auto;}
+.footerWrap{width: 980px; margin: 0 auto; }
 .footerWrap ul{padding:15px 0;}
 .footerWrap ul li{float: left; padding-right: 20px;}
 .footerWrap ul li a{
@@ -427,4 +505,9 @@ fieldset{border: 0;}
 }
 .footerWrap p{
     line-height: 20px; color: #7E7E7E; font-size: 12px; margin-bottom: 10px;}
+
+
+
+
+
 
