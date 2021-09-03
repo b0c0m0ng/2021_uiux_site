@@ -303,50 +303,49 @@ fieldset{border: 0;}
 .content ul li:last-child{margin-right: 0;}
 
 
-
-
-
-
-/* plus1 */
-.plus1{
+.plus{
     width:233px; height: 240px; position: relative;
     transition:0.3s; overflow: hidden;
 }
 .ic{
     position: absolute; display: block; text-align: center;
-    top: 30px; left: 30px; transition: 0.3s;
+    bottom: 30px; left: 30px; transition: 0.3s;
 }
-.ic img{margin-left: 15px;}
-.ic h1{color: white; font-size: 19px; margin-bottom: 10px; margin-left: 5px;}
+.ic img{margin-left: 10px; margin-top: -5px;}
+.ic h1{color: white; font-size: 19px; margin-bottom: 10px; margin-left: 10px;}
 .ic p{color: white; font-size: 14px;}
 
 
-.plus1 img{
+.plus img{
     position: absolute;
     transition:0.3s;
 }
 
-.plus1:hover img{
+.plus:hover img{
     transform:scale(1.1);
 }
-.plus1:hover .ic{top: 25px;}
+.plus:hover .ic{bottom: 150px;}
 
-.plus1 .bg{
+.plus .bg{
     width: 100%;height: 100%;
     position: relative;
-    opacity:0.1;transition:0.3s;background: #000;
+    opacity:0.5;transition:0.3s;background: #000;
 }
-.plus1:hover .bg{opacity:0.5}
+.plus:hover .bg{opacity:0.8}
 
-.plus1 .circle{
+.plus .circle{
     position: absolute;
     width: 30px;height: 30px;
     left:50%;top:50%;transform:translate(-50%,-50%);
     transition:0.3s;border: 3px solid #fff;
     border-radius:50%;
-    animation-duration: 0.3s; 
+    animation-duration: 0.3s;
 }
 
+
+
+
+/* plus button */
 .circle .bar1,
 .circle .bar2{
     width: 15px;height: 2px;background: #fff;position: absolute;
@@ -362,88 +361,6 @@ fieldset{border: 0;}
 }
 
 
-
-/* plus2 */
-.plus2{
-    width:233px; height: 240px; position: relative;
-    transition:0.3s; overflow: hidden;
-}
-.ic1{
-    position: absolute; display: block; text-align: center;
-    bottom: 30px; left: 30px; transition: 0.3s;
-}
-.ic1 img{margin-left: 20px; margin-top: -5px;}
-.ic1 h1{color: white; font-size: 19px; margin-bottom: 10px; margin-left: 5px;}
-.ic1 p{color: white; font-size: 14px;}
-
-
-.plus2 img{
-    position: absolute;
-    transition:0.3s;
-}
-
-.plus2:hover img{
-    transform:scale(1.1);
-}
-.plus2:hover .ic1{bottom: 25px;}
-
-.plus2 .bg{
-    width: 100%;height: 100%;
-    position: relative;
-    opacity:0.5;transition:0.3s;background: #000;
-}
-.plus2:hover .bg{opacity:0.8}
-
-.plus2 .circle{
-    position: absolute;
-    width: 30px;height: 30px;
-    left:50%;top:50%;transform:translate(-50%,-50%);
-    transition:0.3s;border: 3px solid #fff;
-    border-radius:50%;
-    animation-duration: 0.3s; 
-}
-
-
-
-/* plus4 */
-.plus4{
-    width:233px; height: 240px; position: relative;
-    transition:0.3s; overflow: hidden;
-}
-.ic{
-    position: absolute; display: block; text-align: center;
-    top: 30px; left: 30px; transition: 0.3s;
-}
-.ic img{margin-left: 20px; margin-top: -5px;}
-.ic h1{color: white; font-size: 19px; margin-bottom: 10px; margin-left: 20px;}
-.ic p{color: white; font-size: 14px;}
-
-
-.plus4 img{
-    position: absolute;
-    transition:0.3s;
-}
-
-.plus4:hover img{
-    transform:scale(1.1);
-}
-.plus4:hover .ic{top: 25px;}
-
-.plus4 .bg{
-    width: 100%;height: 100%;
-    position: relative;
-    opacity:0.4;transition:0.3s;background: #000;
-}
-.plus4:hover .bg{opacity:0.7}
-
-.plus4 .circle{
-    position: absolute;
-    width: 30px; height: 30px;
-    left:50%;top:50%;transform:translate(-50%,-50%);
-    transition:0.3s;border: 3px solid #fff;
-    border-radius:50%;
-    animation-duration: 0.3s; 
-}
 
 
 
