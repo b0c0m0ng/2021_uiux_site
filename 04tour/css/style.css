@@ -83,19 +83,15 @@ input[type="text"]:focus{outline: none;}
 .visual .visualleft{float: left; padding-top: 20px;width: 500px;}
 .visual .visualright{float:right;}
 
-.visual .visualtop{background: #fff; margin-bottom: 20px;position: relative;}
-
-
-
-fieldset{border: 0;}
-.blind{display: block;position: absolute;left: 0;top: -9999px;}
-
-
 
 
 
 
 /* form */
+.visualtop{margin-bottom: 20px;position: relative;}
+fieldset{border: 0;}
+.blind{display: block;position: absolute;left: 0;top: -9999px;}
+
 .form{float: right; padding: 20px;}
 .form label{display: block; padding: 15px 0;}
 .form select{
@@ -104,8 +100,8 @@ fieldset{border: 0;}
 }
 
 .form .left,
-.form .right{width: 140px;float: left;}
-.form .right1{width:60px; float: right; }
+.form .right{width: 150px;float: left;}
+.form .right1{width:60px; float: right;}
 
 
 .form .left,
@@ -129,10 +125,7 @@ fieldset{border: 0;}
 
 
 
-
-/* slider */
-
-.sliderPager{position: absolute; top: 20px; width: 140px; height: 100%;}
+.sliderPager{position: absolute;}
 .sliderPager .bxPager{height: 100%; background: white;}
 .sliderPager .bxPager a{
     display: block; height:25%;
@@ -146,13 +139,16 @@ fieldset{border: 0;}
 
 
 
+
+
+/* travel go_txt*/
+
 .visualright{_background: #fff; padding-top: 100px;}
 .visualright h1{font-size: 65px; margin-bottom: 20px;}
 .visualright h1:after{
-    content:"";width: 90px;height: 4px;
+    content:""; width: 90px;height: 4px;
     background: #000;display: block;
-    position: absolute;  right: 470px;
-    border-radius:2px
+    right: 470px; border-radius:2px; margin-left: 255px;
 }
 
 .visualright p{font-size: 30px;}

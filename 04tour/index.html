@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@500;700;800&family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
@@ -23,38 +22,27 @@
             $('.slider').bxSlider({
                 controls:false
             });
-            var myslide1 = $('.slider1').bxSlider({
-                controls:false
-            });
-
-            $('.nextBtn').click(function(){
-                myslide1.goToNextSlide();
-            });
-
-             $('.prevBtn').click(function(){
-                myslide1.goToPrevSlide();
-            });
-
-
-            var myslide2 = $('.slider2').bxSlider({
-                controls:false
-            });
-
-            $('.nextBtn2').click(function(){
-                myslide2.goToNextSlide();
-            });
-
-             $('.prevBtn2').click(function(){
-                myslide2.goToPrevSlide();
-            });
-
 
             $('.slider').bxSlider({
-            pagerCustom:'.bxPager',
-            mode:'vertical'
-          });
-        });
+                pagerCustom:'.bxSlider',
+                mode:'vertical'
+            });
 
+
+            var myslide1 = $('.slider1').bxSlider({controls:false});
+
+            $('.nextBtn').click(function(){myslide1.goToNextSlide();});
+            $('.prevBtn').click(function(){myslide1.goToPrevSlide();});
+
+
+            var myslide2 = $('.slider2').bxSlider({controls:false});
+
+            $('.nextBtn2').click(function(){myslide2.goToNextSlide();});
+            $('.prevBtn2').click(function(){myslide2.goToPrevSlide();});
+
+
+    
+        });
 
         
         
@@ -122,6 +110,7 @@
     <div class="visualWrap">
         <div class="visual">
             <div class="visualleft">
+
                 <div class="visualtop">
                     <ul class="slider">
                         <li>
@@ -171,7 +160,6 @@
                                 <input type="submit" value="검색하기" class="btn-submit">
                             </form>
                         </li>
-
                         <li>
                             <form action="#" class="form">
                                 <fieldset>
@@ -219,7 +207,6 @@
                                 <input type="submit" value="검색하기" class="btn-submit">
                             </form>
                         </li>
-
                         <li>
                             <form action="#" class="form">
                                 <fieldset>
@@ -267,7 +254,6 @@
                                 <input type="submit" value="검색하기" class="btn-submit">
                             </form>
                         </li>
-
                         <li>
                             <form action="#" class="form">
                                 <fieldset>
@@ -315,7 +301,8 @@
                                 <input type="submit" value="검색하기" class="btn-submit">
                             </form>
                         </li>
-                    </ul>
+                        
+                        
                     <div class="sliderPager">
                         <div class="bxPager clearfix">
                             <a href="#" data-slide-index="0">공항예약</a>
