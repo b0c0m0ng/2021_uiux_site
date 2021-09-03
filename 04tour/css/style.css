@@ -26,7 +26,7 @@ body{
 
 .searchBtn{
     position: absolute;
-    top: 50%; transform: translateX(-55px) translateY(-55%);
+    top: 50%; transform: translate(250px,-55%);
     width: 40px; height: 40px;
     border: 0px solid #aaa; 
     border-radius: 50%;
@@ -202,66 +202,92 @@ fieldset{border: 0;}
 .banner ul li:last-child{margin-right: 0; margin-bottom: 20px;}
 
 
+
+
+
 /* 1 */
-.banner ul li:nth-child(1){
-    position: relative;
-}
-.banner ul li:nth-child(1) .title{
+.sliderWrap{position: relative;}
+.sliderWrap .title{
     position: absolute; bottom: 0; width: 233px;
     background: #529351; padding: 15px;
 }
-.banner ul li:nth-child(1) .title h3{
+.sliderWrap .title h3{
     color: white; font-size: 16px; margin-bottom: 5px;
 }
+
+.bx-wrapper{
+    -moz-box-shadow: 0 none;
+    -webkit-box-shadow:  0 none;
+    box-shadow:  0 none;
+    border:  0 none;
+    margin-bottom: 0;
+}
+.bx-wrapper .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item 
+{display: none;}
+
+
+.nextBtn,.prevBtn{position: absolute;top: 70px;cursor: pointer;}
+.nextBtn{right: 0;}
+.prevBtn{left: 0;}
+
+
+
+
+
 
 
 /* 2 */
-.banner ul li:nth-child(2){
+.sliderWrap1{
     position: relative;
 }
-.banner ul li:nth-child(2) .title{
+.sliderWrap1 .title{
     position: absolute; bottom: 0; width: 233px;
     background: #152630; padding: 15px;
 }
-.banner ul li:nth-child(2) .title h3{
+.sliderWrap1 .title h3{
     color: white; font-size: 16px; margin-bottom: 5px;
 }
+.nextBtn2,.prevBtn2{position: absolute;top: 70px;cursor: pointer;}
+.nextBtn2{right: 0;}
+.prevBtn2{left: 0;}
+
+
 
 
 
 
 /* 3 */
-.banner ul li:nth-child(3){
+.banner > ul > li:nth-child(3){
     position: relative;
 }
-.banner ul li:nth-child(3) h1{ 
-    position: absolute; top: 10px; right: 90px;
+.banner > ul > li:nth-child(3) h1{ 
+    position: absolute; top: 10px; right: 80px;
     font-size: 20px; color: white;
 }
-.banner ul li:nth-child(3) .title{
+.banner > ul > li:nth-child(3) .title{
     position: absolute; bottom: 0; width: 233px;
     background: rgba(0,0,0,0.8); padding: 15px;
 }
-.banner ul li:nth-child(3) .title h3{
+.banner > ul > li:nth-child(3) .title h3{
     color: white; font-size: 16px;
 }
-.banner ul li:nth-child(3) .title p{
+.banner > ul > li:nth-child(3) .title p{
     color: #999; font-size: 15px;
 }
 
 
 /* 4 */
-.banner ul li:nth-child(4){
+.banner > ul > li:nth-child(4){
     position: relative;
 }
-.banner ul li:nth-child(4) .title{
+.banner > ul > li:nth-child(4) .title{
     position: absolute; bottom: 0; width: 233px;
     background: #44619D; padding: 15px;
 }
-.banner ul li:nth-child(4) .title h3{
+.banner > ul > li:nth-child(4) .title h3{
     color: white; font-size: 16px;
 }
-.banner ul li:nth-child(4) .title p{
+.banner > ul > li:nth-child(4) .title p{
     color: #999; font-size: 15px;
 }
 
@@ -346,7 +372,7 @@ fieldset{border: 0;}
     position: absolute; display: block; text-align: center;
     bottom: 30px; left: 30px; transition: 0.3s;
 }
-.ic1 img{margin-left: 15px;}
+.ic1 img{margin-left: 20px; margin-top: -5px;}
 .ic1 h1{color: white; font-size: 19px; margin-bottom: 10px; margin-left: 5px;}
 .ic1 p{color: white; font-size: 14px;}
 
@@ -389,7 +415,7 @@ fieldset{border: 0;}
     top: 30px; left: 30px; transition: 0.3s;
 }
 .ic img{margin-left: 20px; margin-top: -5px;}
-.ic h1{color: white; font-size: 19px; margin-bottom: 10px; margin-left: 5px;}
+.ic h1{color: white; font-size: 19px; margin-bottom: 10px; margin-left: 20px;}
 .ic p{color: white; font-size: 14px;}
 
 
