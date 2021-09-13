@@ -45,6 +45,7 @@ html,body{height: 100%;}
     #header_top .gnb{background: skyblue;}
     #header_top .gnb li{float: left;}
     #header_top .gnb li>a{display: block;line-height: 50px;text-align: center;padding:0 30px}
+    
     .toggle{display: none;}
 
     .sliderWrap .li_1st,.sliderWrap .li_2st{
@@ -78,27 +79,27 @@ html,body{height: 100%;}
     
     #header_top .gnb{
         position: fixed;width: 100%;height: 100%;background: skyblue;
-        left: 0;top: -100%;z-index:1;display:flex;justify-content: center;
+        left: 0;top: -100%;display:flex;justify-content: center;
         align-items:center;text-align: center;transition:0.3s
     }
     #header_top .gnb.view{
         top: 0;
     }
     #header_top .gnb a{
-        line-height: 40px;background: orange;width: 200px;display: block;
-        font-size: 1.5em;font-weight:bold;
+        line-height: 40px; background: orange; width: 200px; display: block;
+        font-size: 1.5em; font-weight:bold;
     }
     #header_top .gnb li{margin-bottom: 15px;}
 
     
     .toggle{display: block;}
-    .toggle{width: 40px;height: 40px;background: #000;position: relative;z-index:2}
+    .toggle{width: 40px;height: 40px;background: #000;position: relative;}
     .toggle div{
         position: absolute;width: 25px;height: 3px;background: white;
         left: 50%;top:50%;transform: translate(-50%,-50%);
         border-radius:2px;transition:0.3s;cursor:pointer
     }
-    .toggle .bar1{top:10px;}
+    .toggle .bar1{top:10px}
     .toggle .bar3{top:30px}
 
     .toggle.active .bar1{top:50%;transform:translate(-50%,-50%) rotate(45deg)}
