@@ -9,6 +9,10 @@ $(document).ready(function(){
         slider1.goToPrevSlide();
     });
 
+    const slider2 = $(".slider2").bxSlider({
+        controls:false
+    });
+
     // $(".toggle").on("이벤트명",리스너);
     // $(".toggle").on("click",function(){});
     // $(".toggle").click(function(){})
