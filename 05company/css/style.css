@@ -64,7 +64,6 @@ body{
 
 
 
-
     /* content 1 */
     .content>ul>li:nth-child(1){}
 
@@ -351,6 +350,25 @@ body{
         content: ""; display: block; width: 50px; height: 3px;
         background: #000; margin: 10px 3px;
     }
+
+
+/* 서브페이지 */
+/* 한화소개 */
+#main_header>img{width: 100%;}
+.tab{width: 1260px; margin: 0 auto;}
+.tab li{
+    float: left; width: calc(1260px / 4); padding: 20px; text-align: center;
+}
+.tab li.on{background: skyblue;}
+.con div{display: none;}
+.con div:first-child{display: block;}
+
+
+
+
+
+
+
 
 
 
