@@ -4,3 +4,4 @@
 1. 넷마블문화재단 https://b0c0m0ng.github.io/2021_uiux_site/03net
 1. 여행사 https://b0c0m0ng.github.io/2021_uiux_site/04tour
 1. company https://b0c0m0ng.github.io/2021_uiux_site/05company
+1. parallax https://b0c0m0ng.github.io/2021_uiux_site/06parallax
