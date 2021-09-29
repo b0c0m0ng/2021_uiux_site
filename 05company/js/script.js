@@ -35,21 +35,19 @@ $(document).ready(function(){
         $(".toggle").removeClass("active");
         $(".gnb").removeClass("view");
     });
+
+
+    $(".tabmenu1 ul li").click(function(){
+
+        let num = $(this).index();
+    
+        console.log($(this).index());
+        $(".tabmenu1 ul li").removeClass();
+        $(this).addClass("on");
+    
+        $(".con>div").hide();
+        $(".con>div").eq(num).fadeIn();
+    
+    });
    
-});
-
-
-
-
-$("").click(function(){
-
-    let num = $(this).index();
-
-    console.log($(this).index());
-    $("").removeClass();
-    $(this).addClass("on");
-
-    $(".con>div").hide();
-    $(".con>div").eq(num).fadeIn();
-
 });
