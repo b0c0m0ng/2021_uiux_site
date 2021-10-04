@@ -49,5 +49,52 @@ $(document).ready(function(){
         $(".con>div").eq(num).fadeIn();
     
     });
-   
+    $(".tabmenu2 ul li").click(function(){
+
+        let num = $(this).index();
+    
+        console.log($(this).index());
+        $(".tabmenu2 ul li").removeClass();
+        $(this).addClass("on");
+    
+        $(".con>div").hide();
+        $(".con>div").eq(num).fadeIn();
+    
+    });
+    $(".tabmenu3 ul li").click(function(){
+
+        let num = $(this).index();
+    
+        console.log($(this).index());
+        $(".tabmenu3 ul li").removeClass();
+        $(this).addClass("on");
+    
+        $(".con>div").hide();
+        $(".con>div").eq(num).fadeIn();
+    
+    });
+    $(".tabmenu4 ul li").click(function(){
+
+        let num = $(this).index();
+    
+        console.log($(this).index());
+        $(".tabmenu4 ul li").removeClass();
+        $(this).addClass("on");
+    
+        $(".con>div").hide();
+        $(".con>div").eq(num).fadeIn();
+    
+    });
+    $(".tabmenu5 ul li").click(function(){
+
+        let num = $(this).index();
+    
+        console.log($(this).index());
+        $(".tabmenu5 ul li").removeClass();
+        $(this).addClass("on");
+    
+        $(".con>div").hide();
+        $(".con>div").eq(num).fadeIn();
+    
+    });
 });
