@@ -664,10 +664,8 @@ body{
 
 
     .tab,
-    .tab3{margin: 0 auto; border-bottom: 3px solid #EA6D21;}
+    .tab3{margin: 0 auto; border-bottom: 3px solid #EA6D21; width: 100%;}
     
-    .tab,
-    .tab3{width: 100%}
     .tab li,
     .tab3 li{
         float: left; width: calc(100% / 2); padding: 20px; text-align: center;
@@ -676,7 +674,10 @@ body{
     }
     .tab3 li:nth-child(2){display: none;}
     .tab li.on,
-    .tab3 li.on{background: #FF6600; color: white;}    
+    .tab3 li.on{background: #FF6600; color: white;}  
+
+    .hmenu{width: 100%; margin: 0 auto;}
+    .hmenu li{float: left; margin-right: 10px;}
 
 
 
