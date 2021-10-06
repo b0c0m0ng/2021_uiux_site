@@ -304,52 +304,7 @@ body{
 
 
 
-    .news{width: 1260px; margin: 0 auto; margin-bottom: 50px;}
-    .news h3{font-size:30px;}
-    .news h3:after{
-        content: ""; display: block; width: 50px; height: 3px;
-        background: #000; margin: 10px 3px;
-    }
     
-    .news ul>li{float: left;}
-
-    .news ul>li:nth-child(1){
-        height: 630px;  border: 1px solid #CCC; margin-right: 5px;
-    }  
-    .news ul>li:nth-child(1) img{margin-bottom: 30px;} 
-    .news ul>li:nth-child(1) a{display: block;margin-left: 30px;line-height: 30px;} 
-    .news ul>li:nth-child(1) h1{font-size: 25px; margin-bottom: 20px;} 
-    .news ul>li:nth-child(1) h4{font-size: 20px;}
-    .news ul>li:nth-child(1) p{font-size: 20px; color: #A1A1A1; margin-top: 20px;}
-    
-    
-    
-    
-    .news ul>li:nth-child(2){
-        float: right; margin-bottom: 50px;
-        background: url(../images/news02.png) no-repeat;
-        width: 580px; height: 290px;
-    }
-    .news ul>li:nth-child(2) a{display: block; padding: 150px 30px;}
-    .news ul>li:nth-child(2) p{font-size: 20px; color: white; line-height: 30px;}
-    
-    
-    
-    .news ul>li:nth-child(3){
-        float: right; background: url(../images/news03.png) no-repeat;
-        width: 580px; height: 290px;
-    }
-    .news ul>li:nth-child(3) a{display: block; padding: 150px 30px;}
-    .news ul>li:nth-child(3) p{font-size: 20px; color: white; line-height: 30px;}
-
-
-
-    .info{width: 1260px; margin: 0 auto;}
-    .info h3{font-size:30px;}
-    .info h3:after{
-        content: ""; display: block; width: 50px; height: 3px;
-        background: #000; margin: 10px 3px;
-    }
 
 
 
@@ -472,6 +427,55 @@ body{
     .content{
         width: 1260px; position: absolute; left: 50%;
         transform: translateX(-50%);bottom: 0;
+    }
+
+
+
+    .news{width:  1260px; margin: 0 auto; margin-bottom: 50px;}
+    .news h3{font-size:30px;}
+    .news h3:after{
+        content: ""; display: block; width: 50px; height: 3px;
+        background: #000; margin: 10px 3px;
+    }
+    
+    .news ul>li{float: left;}
+
+    .news ul>li:nth-child(1){
+        height: 630px;  border: 1px solid #CCC; margin-right: 5px;
+    }  
+    .news ul>li:nth-child(1) img{margin-bottom: 30px;} 
+    .news ul>li:nth-child(1) a{display: block;margin-left: 30px;line-height: 30px;} 
+    .news ul>li:nth-child(1) h1{font-size: 25px; margin-bottom: 20px;} 
+    .news ul>li:nth-child(1) h4{font-size: 20px;}
+    .news ul>li:nth-child(1) p{font-size: 20px; color: #A1A1A1; margin-top: 20px;}
+    
+    
+    
+    
+    .news ul>li:nth-child(2){
+        float: right; margin-bottom: 50px;
+        background: url(../images/news02.png) no-repeat;
+        width: 580px; height: 290px;
+    }
+    .news ul>li:nth-child(2) a{display: block; padding: 150px 30px;}
+    .news ul>li:nth-child(2) p{font-size: 20px; color: white; line-height: 30px;}
+    
+    
+    
+    .news ul>li:nth-child(3){
+        float: right; background: url(../images/news03.png) no-repeat;
+        width: 580px; height: 290px;
+    }
+    .news ul>li:nth-child(3) a{display: block; padding: 150px 30px;}
+    .news ul>li:nth-child(3) p{font-size: 20px; color: white; line-height: 30px;}
+
+
+
+    .info{width: 1260px; margin: 0 auto;}
+    .info h3{font-size:30px;}
+    .info h3:after{
+        content: ""; display: block; width: 50px; height: 3px;
+        background: #000; margin: 10px 3px;
     }
 
 
@@ -652,8 +656,14 @@ body{
     .container .vision li:nth-child(2n){margin-right: 0;}
     .container .vision li .card_body p{display: none;}
 
-    .news{width: 100%;}
+
+    .news{ width: 100%; padding: 5px;}
+    .news img{width: 100%; margin-bottom: 20px;}
     .news h3{font-size:30px; text-align: center;}
+    .news h1{font-size: 30px; margin-bottom: 10px;}
+    .news h4{line-height: 30px;}
+    .news p{margin-top: 20px; margin-bottom: 50px;}
+
     .news h3:after{
         content: ""; display: block; width: 50px; height: 3px;
         background: #000; margin: 15px auto;
@@ -691,7 +701,7 @@ body{
 
 
 
-    #footer{width: 100%; padding: 20px; margin: 0 auto;}
+    #footer{width: 100%; padding: 20px; margin: 0 auto; background: #ddd;}
     #footer .footerWrap{display: flex;flex-direction:column; align-items: center;}
 
     #footer .footerWrap .footer2 ul li{float: left; margin-right: 10px;}
