@@ -3,13 +3,14 @@
 :root{
     --primary-color:#E71471 ;
     --secondary-color:#D49855 ;
-    --third-color:#999999;
+    --third-color:#f1f1f1;
     --four-color:#FE0000;
     --black-color:#000;
 }
 
-
-
+/* font */
+.f25{font-size: 25px; font-weight: bold;}
+.fa13{font-size: 13px; color: #a1a1a1; font-weight: bold;}
 
 
 /* button */
@@ -21,13 +22,17 @@
 
 
 
-#headerWrap{background: var(--black-color); height: 100px; line-height: 60px;}
-#headerWrap .bgcolor{
-    position: absolute;
-    width: 100%;height: 300px;
-    background: #000;
-    left:0;top:-600px
+#headerWrap{
+    background: var(--black-color); height: 100px; line-height:100px; 
+    position: relative;
 }
+#headerWrap .header{
+    position: absolute;
+    width: 100%;height: 30px;
+    top: 0;
+    background: #fff;
+}
+#headerWrap .header p{color:white; text-align: center;}
 
 
 /* #headerWrap .video video{
@@ -55,9 +60,12 @@
 
 .slider .row h1{font-weight: bold;font-size: 25px; margin-bottom: 20px;}
 .slider .row h4{font-size: 15px; margin-bottom: 5px;}
-.slider .row p{font-size: 13px; color: #aaa;}
 
 
+
+/* service */
+.service{background: var(--third-color)}
+.card{border-radius: 0; border: 0;}
 
 
 
