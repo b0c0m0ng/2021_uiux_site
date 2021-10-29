@@ -9,6 +9,7 @@
 }
 
 /* font */
+.fu13{font-size: 13px; font-weight: bold;}
 .f25{font-size: 25px; font-weight: bold;}
 .fa13{font-size: 13px; color: #a1a1a1; font-weight: bold;}
 
@@ -131,7 +132,8 @@
 }
 
 .contact{
-    background: url(../images/main_bg4.jpg) no-repeat center fixed;
+    background: url(../images/visual.jpg) no-repeat center fixed;
+    height: 400px;
     background-size: cover;
 }
 
