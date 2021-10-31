@@ -19,6 +19,7 @@
 .brn{padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 10px;}
 .bbn{padding: 5px 50px; margin-bottom: 20px; font-weight: bold; margin-top: 5px;}
 .btd{font-size: 13px;}
+.btb{background: #000;padding: 5px 30px;}
 
 
 #headerWrap{
@@ -68,14 +69,14 @@
 
 
 
-.slider .swiper-next{
+/* .slider .swiper-next{
     position: absolute;right: 0;
     width: 20px;height: 38px;background-image: url(../images/right-arrow.svg);
 }
 .slider .swiper-prev{
     position: absolute;top:50%;transform:translateY(-50%);left: 0;
     width: 20px;height: 38px;background-image: url(../images/left-arrow.svg);
-}
+} */
 
 
 .text-center{font-size: 30px; font-weight: bold;}
@@ -133,7 +134,6 @@
 
 .contact{
     background: url(../images/visual.jpg) no-repeat center fixed;
-    height: 400px;
     background-size: cover;
 }
 
