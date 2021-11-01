@@ -18,34 +18,32 @@
     
   </head>
   <body>
-    <header id="headerWrap">
-        <div class="header"></div>
+    <div class="headerWrap bg-dark mb-md-lg-5 mt-3">
         <div class="container">
-            <nav class="navbar navbar-expand-sm">
-                <a class="navbar-brand mx-auto" href="index.html"><img src="images/ylogo.png" alt="" style="width:180px"></a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" 
-                    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html"><img src="images/ylogo.png" alt="" style="width: 180px;"></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="company.html" style="color: white;">WHAT'S NEW</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="catalog.html" style="color: white;">MAKEUP</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#" style="color: white;">SKINCARE</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#" style="color: white;">PERFUME</a>
-                        </li>
-                    </ul> 
-                </div>
-            </nav>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mt-auto mt-lg-auto ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="new.html">WHAT'S NEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MAKEUP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SKINCARE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PERFUME</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </div>
 
 
 
@@ -62,7 +60,7 @@
                             <div class="slide-txt">
                                 <h1>새로운 자유, 리브르</h1>
                                 
-                                <ul class="b clearfix d-md-none d-lg-block">
+                                <ul class="b clearfix d-none d-lg-block">
                                     <li class="btn text-white brn" style="background: #FE0000;">회원</li>
                                     <li class="cen">EXCLUSIVE OFFER</li>
                                 </ul>
@@ -121,6 +119,32 @@
     </div>
 
 
+        <!-- 모바일 슬라이더 -->
+        <div class="show d-md-none d-block">
+        <div class="swiper-slide">
+            <img src="images/main_bg1.jpg" alt="" class="w-100 mb-3">
+            <ul class="txt">
+                <li><p>새로운 자유, 리브르 향수</p></li>
+                <li class="u"><u><a href="#!" class="fu13">더 알아보기</a></u></li>
+            </ul>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/main_bg5.jpg" alt="" class="w-100 mb-3">
+            <ul class="txt">
+                <li><p>홀리데이 골드 컬렉션</p></li>
+                <li class="u"><u><a href="#!" class="fu13">더 알아보기</a></u></li>
+            </ul>
+        </div>
+        <div class="swiper-slide white">
+            <img src="images/main_bg6.jpg" alt="" class="w-100 mb-3">
+            <ul class="txt">
+                <li><p>더 슬림 벨벳 래디컬</p></li>
+                <li class="u"><u><a href="#!" class="fw13">더 알아보기</a></u></li>
+            </ul>
+        </div>
+    </div>
+
+
     <!-- 베스트 셀러 -->
     <div class="banner mb-5 mt-5">
         <div class="container">
@@ -175,7 +199,7 @@
     <div class="contact py-5 mb-5">
         <div class="container py-3 mr-5">
             <div class="row">
-                <div class="text-black">
+                <div class="text-black ml-5">
                     <h2 class="mb-4 f25">모든 구매 시, <br> 체험 샘플 3종 증정</h2>
                     <p class="fu13 mb-4">* 나이트 리부트 세럼 1ML<br>
                        * 퍼펙트 플럼퍼 크림 1ML<br>
@@ -246,36 +270,122 @@
         <div class="container py-5">
             <h2 class="text-center mb-5">입생로랑 뷰티 추천 제품</h2>
             <div class="btn-group mb-3">
-                <button class="btn btn-primary active" data-filter="*" id="btn1">전체보기</button>
-                <button class="btn btn-primary" data-filter=".face">페이스</button>
-                <button class="btn btn-primary" data-filter=".rip">립</button>
-                <button class="btn btn-primary" data-filter=".perfume">향수</button>
-                <button class="btn btn-primary" data-filter=".skincare">스킨케어</button>
+                <button class="btn btn-outline-dark active mr-2" data-filter="*" id="btn1">전체보기</button>
+                <button class="btn btn-outline-dark mr-2" data-filter=".face">페이스</button>
+                <button class="btn btn-outline-dark mr-2" data-filter=".rip">립</button>
+                <button class="btn btn-outline-dark mr-2" data-filter=".perfume">향수</button>
+                <button class="btn btn-outline-dark mr-2" data-filter=".skincare">스킨케어</button>
             </div>
             <div class="row">
-                <div class="col-5 col-lg-5 element-item face mb-3">
-                    <a href="assets/servicos/face1.jpg" class="popup_link"><img src="assets/servicos/face1.jpg" alt="" class="img-fluid"></a>
+                <div class="col-6 col-lg-3 element-item face mb-3 m-auto">
+                    <a href="assets/servicos/face1.jpg"><img src="assets/servicos/face1.jpg" alt="" class="img-fluid" style="width: 200px;"></a>
+                    <h3>르 쿠션 엉크르 드 뽀</h3>
+                    <h5>르 쿠션 엉크르드 뽀</h5>
+                    <p>89,000원</p>
                 </div>
-                <div class="col-4 col-lg-3 element-item rip mb-3">
-                    <a href="assets/servicos/rip1.jpg" class="popup_link"><img src="assets/servicos/rip1.jpg" alt="" class="img-fluid"></a>
+                <div class="col-6 col-lg-3 element-item rip mb-3">
+                    <a href="assets/servicos/rip1.jpg"><img src="assets/servicos/rip1.jpg" alt="" class="img-fluid"></a>
+                    <ul class="m-auto pb-4">
+                        <li><img src="images/rcolor01.jpg" alt=""></li>
+                        <li><img src="images/rcolor02.jpg" alt=""></li>
+                        <li><img src="images/rcolor03.jpg" alt=""></li>
+                        <li><img src="images/rcolor04.jpg" alt=""></li>
+                        <li><img src="images/rcolor05.jpg" alt=""></li>
+                    </ul>
+                    <h3>따뚜아쥬 꾸뛰르 벨벳 틴트</h3>
+                    <h5>벨벳 틴트</h5>
+                    <p>49,000원</p>
                 </div>
-                <div class="col-4 col-lg-3 element-item face mb-3">
-                    <a href="assets/servicos/face2.jpg" class="popup_link"><img src="assets/servicos/face2.jpg" alt="" class="img-fluid"></a>
+                <div class="col-6 col-lg-3 element-item face mb-3">
+                    <a href="assets/servicos/face2.jpg"><img src="assets/servicos/face2.jpg" alt="" class="img-fluid"></a>
+                    <ul class="m-auto pb-4">
+                        <li><img src="images/fcolor01.jpg" alt=""></li>
+                        <li><img src="images/fcolor02.jpg" alt=""></li>
+                        <li><img src="images/fcolor03.jpg" alt=""></li>
+                        <li><img src="images/fcolor04.jpg" alt=""></li>
+                        <li><img src="images/fcolor05.jpg" alt=""></li>
+                    </ul>
+                    <h3>NEW 엉크르 드 뽀 쿠션</h3>
+                    <h5>NEW 잉크 쿠션</h5>
+                    <p>89,000원</p>
                 </div>
-                <div class="col-4 col-lg-3 element-item perfume mb-3">
-                    <a href="assets/servicos/perfume2.jpg" class="popup_link"><img src="assets/servicos/perfume2.jpg" alt="" class="img-fluid"></a>
+                <div class="col-6 col-lg-3 element-item skincare mb-3">
+                    <a href="assets/servicos/skincare3.png"><img src="assets/servicos/skincare3.png" alt="" class="img-fluid"></a>
+                    <h3>퓨어샷 리치 탄력 크림</h3>
+                    <h5>리치 탄력 크림</h5>
+                    <p>135,000원</p>
                 </div>
-                <div class="col-4 col-lg-3 element-item skincare mb-3">
-                    <a href="assets/servicos/skincare2.jpg" class="popup_link"><img src="assets/servicos/skincare2.jpg" alt="" class="img-fluid"></a>
+                <div class="col-6 col-lg-3 element-item perfume mb-3">
+                    <a href="assets/servicos/perfume2.jpg"><img src="assets/servicos/perfume2.jpg" alt="" class="img-fluid"></a>
+                    <h3>리브르 오 드 빠르펭</h3>
+                    <h5>입생로랑 아이코닉 향수</h5>
+                    <p>155,000원</p>
                 </div>
-                <div class="col-4 col-lg-3 element-item rip mb-3">
-                    <a href="assets/servicos/rip2.jpg" class="popup_link"><img src="assets/servicos/rip2.jpg" alt="" class="img-fluid"></a>
+                <div class="col-6 col-lg-3 element-item perfume mb-3">
+                    <a href="assets/servicos/perfume1.jpg"><img src="assets/servicos/perfume1.jpg" alt="" class="img-fluid"></a>
+                    <h3>리브르 오드 빠르펭 인텐스</h3>
+                    <h5>강렬한 플로럴 향수</h5>
+                    <p>165,000원</p>
                 </div>
-                <div class="col-4 col-lg-3 element-item face mb-3">
-                    <a href="assets/servicos/face3.jpg" class="popup_link"><img src="assets/servicos/face3.jpg" alt="" class="img-fluid"></a>
+                <div class="col-6 col-lg-3 element-item perfume mb-3">
+                    <a href="assets/servicos/perfume3.jpg"><img src="assets/servicos/perfume3.jpg" alt="" class="img-fluid"></a>
+                    <h3>리브르 헤어 미스트</h3>
+                    <h5>헤어 미스트</h5>
+                    <p>62,000원</p>
                 </div>
-                <div class="col-4 col-lg-3 element-item perfume mb-3">
-                    <a href="assets/servicos/perfume3.jpg" class="popup_link"><img src="assets/servicos/perfume3.jpg" alt="" class="img-fluid"></a>
+                <div class="col-6 col-lg-3 element-item skincare mb-3">
+                    <a href="assets/servicos/skincare2.jpg"><img src="assets/servicos/skincare2.jpg" alt="" class="img-fluid"></a>
+                    <ul class="m-auto pb-4">
+                        <li><img src="images/scolor1.jpg" alt=""></li>
+                        <li><img src="images/scolor2.jpg" alt=""></li>
+                        <li><img src="images/scolor3.jpg" alt=""></li>
+                    </ul>
+                    <h3>인스턴트 톤업 UV</h3>
+                    <h5>데이리 톤업 선크림</h5>
+                    <p>75,000원</p>
+                </div>
+                <div class="col-6 col-lg-3 element-item rip mb-3">
+                    <a href="assets/servicos/rip2.jpg"><img src="assets/servicos/rip2.jpg" alt="" class="img-fluid"></a>
+                    <ul class="m-auto pb-4">
+                        <li><img src="images/rcolor06.jpg" alt=""></li>
+                        <li><img src="images/rcolor07.jpg" alt=""></li>
+                        <li><img src="images/rcolor08.jpg" alt=""></li>
+                        <li><img src="images/rcolor09.jpg" alt=""></li>
+                        <li><img src="images/rcolor10.jpg" alt=""></li>
+                    </ul>
+                    <h3>루쥬 볼륍떼 샤인</h3>
+                    <h5>고보습 샤인 립스틱</h5>
+                    <p>49,000원</p>
+                </div>
+                <div class="col-6 col-lg-3 element-item skincare mb-3">
+                    <a href="assets/servicos/skincare1.jpg"><img src="assets/servicos/skincare1.jpg" alt="" class="img-fluid"></a>
+                    <h3>나이트 리부트 세럼</h3>
+                    <h5>데일리 각질 케어 안티에이징 세럼</h5>
+                    <p>117,000원</p>
+                </div>
+                <div class="col-6 col-lg-3 element-item face mb-3">
+                    <a href="assets/servicos/face3.jpg"><img src="assets/servicos/face3.jpg" alt="" class="img-fluid"></a>
+                    <ul class="m-auto pb-4">
+                        <li><img src="images/fcolor06.jpg" alt=""></li>
+                        <li><img src="images/fcolor07.jpg" alt=""></li>
+                        <li><img src="images/fcolor08.jpg" alt=""></li>
+                        <li><img src="images/fcolor09.jpg" alt=""></li>
+                        <li><img src="images/fcolor10.jpg" alt=""></li>
+                    </ul>
+                    <h3>올아워 파운데이션</h3>
+                    <h5>올아워파운데이션</h5>
+                    <p>80,000원</p>
+                </div>
+                <div class="col-6 col-lg-3 element-item rip mb-3">
+                    <a href="assets/servicos/rip3.jpg"><img src="assets/servicos/rip3.jpg" alt="" class="img-fluid"></a>
+                    <ul class="m-auto pb-4">
+                        <li><img src="images/rcolor14.jpg" alt=""></li>
+                        <li><img src="images/rcolor15.jpg" alt=""></li>
+                        <li><img src="images/rcolor16.jpg" alt=""></li>
+                    </ul>
+                    <h3>밀크티 컬렉션</h3>
+                    <h5>12가지 인텐스 누드 컬러</h5>
+                    <p>49,000원</p>
                 </div>
             </div>
         </div>
@@ -333,12 +443,13 @@
 
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.9/swiper-bundle.min.js" integrity="sha512-bPNHwutl0bNsjHtw+AtR2xvp0BLtpm9mN6LcqzDZifcQSYv/dPVvND245WZVst+m7GhYHX647RoaL9w6VVraxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.9/swiper-bundle.min.js" integrity="sha512-bPNHwutl0bNsjHtw+AtR2xvp0BLtpm9mN6LcqzDZifcQSYv/dPVvND245WZVst+m7GhYHX647RoaL9w6VVraxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
@@ -424,27 +535,42 @@
         console.log(winWidth)
     });
 
-     // isotope
-     const btns = $(".portfolio .btn-group .btn");
-        btns.click(function(){
-            let i = $(this).index()
-            btns.removeClass("active");
-            $(this).addClass("active");
+    // isotope
+    const btns = $(".portfolio .btn-group .btn");
+    btns.click(function(){
+        let i = $(this).index()
+        btns.removeClass("active"); 
+        $(this).addClass("active");
 
-            let selector = $(this).attr("data-filter");
-            console.log(selector)
-            $(".portfolio .row").isotope({
-                filter:selector
-            })
+        let selector = $(this).attr("data-filter");
+        console.log(selector)
+        $(".portfolio .row").isotope({
+            filter:selector
         })
-        // isotope load
-        window.onload = function(){
-            $(".portfolio .btn-group #btn1").trigger("click");
-        }
+    })
+    // isotope load
+    window.onload = function(){
+        $(".portfolio .btn-group #btn1").trigger("click");
+    }
 
-        // light box - modal
-        $(".portfolio .row .popup_link").magnificPopup({type:"image"})
-    
+    // light box - modal
+    $(".portfolio .row .popup_link").magnificPopup({type:"image"})
+
+        
+    // slider 
+    $(".customer .owl-carousel").owlCarousel({
+        loop:true,
+        margin:10,
+        //nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            992:{
+                items:4
+            }
+        }
+    });
 
         
     </script>

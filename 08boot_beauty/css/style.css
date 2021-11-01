@@ -11,6 +11,7 @@
 /* font */
 .f10{font-size: 10px;}
 .fu13{font-size: 13px; font-weight: bold;}
+.fw13{font-size: 13px;  color: #fff; font-weight: bold;}
 .f25{font-size: 25px; font-weight: bold;}
 .fa13{font-size: 13px; color: #a1a1a1; font-weight: bold;}
 
@@ -23,34 +24,10 @@
 .btb{background: #000;padding: 5px 30px;}
 
 
-#headerWrap{
-    background: var(--black-color); height: 100px; line-height:100px; 
-    position: relative;
-}
-#headerWrap .header{
-    position: absolute;
-    width: 100%;height: 30px;
-    top: 0;
-    background: #fff;
-}
 
-
-
-/* #headerWrap .video video{
-    width: 100%;object-fit: fill;
-    border-radius: 5px;
-    box-shadow:10px 10px 25px rgba(0,0,0,0.4)
-} */
-/* #headerWrap .video .txt{position: absolute;bottom: 10px;right: 30px;} */
-#headerWrap .card-view{
-    /* border-radius: 5px; */
-    overflow: hidden;
-    /* box-shadow:10px 10px 25px rgba(0,0,0,0.4) */
-}
 .navbar{transition:0.3s}
-.navbar.onView{
-    background: #000; text-align: center;
-}
+.bb{border: 0 none;}
+.white{color: white;}
 
 
 /* slider */
@@ -63,21 +40,16 @@
 .slider .row h4{font-size: 15px; margin-bottom: 5px;}
 
 
+.mshow .txt img{position: relative;}
+.txt p{
+    font-size: 13px; font-weight: bold; 
+    position: absolute; top: 30px; right: 30px;
+}
+.txt .u{position: absolute; top: 60px; right: 70px;}
 
 /* service */
 .service{background: var(--third-color)}
 .card{border-radius: 0; border: 0;}
-
-
-
-/* .slider .swiper-next{
-    position: absolute;right: 0;
-    width: 20px;height: 38px;background-image: url(../images/right-arrow.svg);
-}
-.slider .swiper-prev{
-    position: absolute;top:50%;transform:translateY(-50%);left: 0;
-    width: 20px;height: 38px;background-image: url(../images/left-arrow.svg);
-} */
 
 
 .text-center{font-size: 30px; font-weight: bold;}
@@ -90,58 +62,28 @@
 
 
 
-.banner .card{
-    border: 0 none;overflow: hidden;
-    /* box-shadow:10px 10px 25px rgba(0,0,0,0.4); */
-    cursor:pointer
-}
-.banner .card .card-img{position: relative;}
-.banner .card .mask{
-    background: rgba(2,240,228,0.3);position: absolute;width: 100%;height: 100%;
-    top:0;transition:0.3s
-}
-.banner .card:hover .mask{opacity:0}
-
-.advan{position: relative;}
-.advan .icon{
-    width: 80px;height: 80px;border-radius: 40px;
-    box-shadow:10px 10px 25px rgba(0,0,0,0.2);
-}
-.advan .title1st{color: var(--primary-color)}
-.advan .title2st{color: var(--secondary-color)}
-.advan .title3st{color: var(--third-color)}
-
-.advan .img-view{position: relative;height: 400px;}
-.advan .img-view img{
-    position: absolute;border-radius:5px;
-    box-shadow:10px 10px 25px rgba(0,0,0,0.2);
-}
-
-.advan .img-view .img-1st{right: 0;top: 0;width: 400px;}
-.advan .img-view .img-2st{left: 0;bottom: 0;width:300px}
-.advan .img-view .img-3st{left: 0;top: 0;width:400px}
-.advan .img-view .img-4st{right: 10px;bottom: 10px;width:400px}
-.advan .img-view .img-5st{right: 0;top: 0;width:400px}
-.advan .img-view .img-6st{left: 0;bottom: 0;width:300px}
-
-
-.advan .bgcolor{
-    position: absolute;
-    width: 100%;height: 1000px;
-    background-image: linear-gradient(316deg, #02ccba 0%, #aa7ecd 100%);
-    transform:skew(0,10deg);
-    left:0;top:200px
-}
-
 .contact{
     background: url(../images/visual.jpg) no-repeat center fixed;
     background-size: cover;
 }
+
+.portfolio ul{display: table;}
+.portfolio ul li{float: left; margin-right: 10px;}
+.portfolio h3{font-size: 20px; font-weight: bold; text-align: center;}
+.portfolio h5{font-size: 15px; color: #a1a1a1; text-align: center;}
+.portfolio p{font-size: 15px;text-align: center;}
+
+
+
+
+
 .footer{background: #000;}
 .footer hr{background: #fff; margin: 20px auto; width: 90%;}
 .white{color: white;}
 .footer ul li img{background: #aaa; border-radius: 50%; width: 30px; height: 30px;}
 .footer ul li img:hover{background :#fff}
+
+
 
 
 /* subpage company */
