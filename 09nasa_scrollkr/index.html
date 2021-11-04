@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{height: 500vh;background: #061b2b;}
+        .view{position:fixed;color:white}
+        #scene_1st{
+            background: url(img/bg/space_stars_static.svg);
+            width: 100%;height: 500vh;
+            
+        }
+        #scene_1st .man{
+            width: 512px;height: 512px;
+            position: absolute;left: 50%;top: 50%;;
+        }
+
+        #scene_1st .text{height: 100%;_background: rgba(255,0,0,0.3);position: relative;}
+        
+        #scene_1st .content1,
+        #scene_1st .content2
+        {
+                width: 300px;height: 200px;background: white;
+                border-radius: 10px;
+                
+        }
+
+        #scene_1st .space_sun{position: absolute;top:1500px;width: 100%;}
+
+        @media screen and (min-width:700px){
+            #scene_1st .content1{
+                width: 300px;height: 200px;background: white;
+                border-radius: 10px;
+                position: absolute;top:500px;right: 10vw;
+            }
+            #scene_1st .content2{
+                width: 300px;height: 200px;background: white;
+                border-radius: 10px;
+                position: absolute;top:900px;left: 10vw;
+            }
+        }
+
+        @media screen and (max-width:700px){
+            #scene_1st .content1{position: fixed;;bottom: 50px;left:50%;margin-left: -150px;}
+            #scene_1st .content2{position: fixed;;bottom: 50px;left:50%;margin-left: -150px;}
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="view">
+        현재위치: <span class="scroll">0</span><br>
+        스크롤높이: <span class="wscroll">0</span><br>
+    </div>
+    <section id="scene_1st" class="view01">
+        <div class="man" 
+            data-0="transform:translate(-50%,-50%) scale(0);position:fixed" 
+            data-200="transform:translate(-50%,-50%) scale(1)"
+        >
+        <img src="img/char/character_astronaut.svg" 
+            data-0="display:block" 
+            data-400="display:none">
+        <img src="img/char/character_astronaut_drift.svg"
+            data-0="display:none"
+            data-400="display:block" 
+            data-800="display:none"
+        >
+        <img src="img/char/character_astronaut_excited.svg"
+        data-0="display:none"
+        data-400="display:none" 
+        data-800="display:block"
+    >
+        </div>
+        <div class="text">
+            <div class="content1"
+                data-0="opacity:0"
+                data-120="opacity:0;transform:translateY(50px)"
+                data-220="opacity:1;transform:translateY(0px)"
+                data-340="opacity:1;;transform:translateY(0px)"
+                data-480="opacity:0;transform:translateY(-50px)"
+            >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, facilis?
+            </div>
+
+            <div class="content2"
+                data-0="opacity:0"
+                data-420="opacity:0;transform:translateY(50px)"
+                data-520="opacity:1;transform:translateY(0px)"
+                data-640="opacity:1;;transform:translateY(0px)"
+                data-780="opacity:0;transform:translateY(-50px)"
+            >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, facilis?
+            </div>
+            
+        </div>
+        <img src="img/space/space_sun.svg" alt="" class="space_sun">
+    </section>
+    
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/script.js"></script>
+<script>
+    let scrollY = 0;
+    let wHeight = 0;
+
+    window.addEventListener("resize",function(){
+        viewer();
+    })
+
+    window.addEventListener("scroll",function(){
+        viewer();
+      
+    })
+
+    function viewer(){
+        wHeight = document.body.offsetHeight - window.innerHeight;
+        scrollY = window.pageYOffset;
+
+        document.querySelector(".scroll").innerHTML = scrollY
+        document.querySelector(".wscroll").innerHTML = wHeight
+    }
+</script>
+	
+</body>
+</html>

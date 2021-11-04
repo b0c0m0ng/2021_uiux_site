@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {height:300vh}
+
+/* .parallax {position: fixed; width: 100%; height: 800px;}
+.txt {position: absolute; top: 30%; left: 30%; width: 500px; opacity: 0;}
+
+.sec01 {}
+.sec01 .txt {opacity: 1;}
+.sec02 {}
+.sec02 .txt {opacity: 1;}
+.sec03 {}
+.sec03 .shape {
+    border-left: 100px solid navy;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 50%;
+}
+.sec04 {background-color: navy;}
+.sec04 .txt {position: fixed;} */
