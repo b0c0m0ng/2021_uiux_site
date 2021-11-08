@@ -2,15 +2,28 @@
 
 body{font-family: 'IBM Plex Sans KR', sans-serif;}
 
+
+.fw15{color: gray; font-size: 15px;}
+.fw20{color: black; font-size: 20px; margin-bottom: 30px;}
+.fw30{color: black; font-size: 30px; font-weight: bold; margin-bottom: 20px;}
+.fr20{color: brown; font-size: 20px;}
+
+
+
+
+
 .section{
-    background-image: url(images/bg1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
     font-size: 3rem;
+    
 }
-        
+.section.page1{background-image: url(../images/bg01.jpg);}
+
+
+
 .section.page2{background-image: url(../images/bg02.jpg);}
 .section.page3{background-image: url(../images/bg03.jpg);}
 .section.page4{background-image: url(../images/bg04.jpg);}
@@ -18,19 +31,15 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
 .section .view{width: 100%;height: 100%;position: relative;}
 
 #navTop{
-    position: fixed;z-index: 1;
-    width: 100%;
-    padding-top: 10px;
-    display: flex;padding-left: 50px;
-    box-sizing: border-box !important;
+    position: fixed;z-index: 1; width: 100%;
+    display: flex; align-items:end; justify-content:space-around;
+    box-sizing: border-box !important; padding-top: 10px;
 }
-
 #navTop h1{margin-right: auto;font-size: 1.5em;}
-#navTop #topMenu{margin-right :100px;}
 #topMenu li{float: left;width: 100px;}
-#topMenu li a{display: block;line-height: 50px;text-align: center;}
+#topMenu li a{display: block;line-height: 40px;text-align: center;}
 #topMenu li:hover,
-#topMenu li.active{color: #c1c1c1; background: #a1a1a1;}
+#topMenu li.active{color: plum;}
 
 
 ul{margin-bottom: 0;}
