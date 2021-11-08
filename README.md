@@ -8,3 +8,4 @@
 1. company_boot https://b0c0m0ng.github.io/2021_uiux_site/07company
 1. company1_boot https://b0c0m0ng.github.io/2021_uiux_site/07company1
 1. beauty_boot https://b0c0m0ng.github.io/2021_uiux_site/08boot_beauty
+1. pilates_full https://b0c0m0ng.github.io/2021_uiux_site/09full_pilates
