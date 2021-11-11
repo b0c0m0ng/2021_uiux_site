@@ -3,10 +3,34 @@
 body{font-family: 'IBM Plex Sans KR', sans-serif;}
 
 
-.fw15{color: gray; font-size: 15px;}
-.fw20{color: black; font-size: 20px; margin-bottom: 30px;}
-.fw30{color: black; font-size: 30px; font-weight: bold; margin-bottom: 20px;}
+.scrollBtn{
+            position: absolute;bottom: 30px;left:50%;transform:translateX(-50%);
+            animation: xScroll 0.8s infinite alternate;
+        }
+        @keyframes xScroll {
+            to{bottom: 50px;}
+        }
+
+        @media screen and (max-width:765px){
+            .section .view03{transform:translateY(0px)}
+            .scrollBtn{_display: none;}
+        }
+
+
+/* font */
+
+.fw20{color: white; font-size: 20px;}
+.fw30{
+    color: white; font-size: 30px; font-weight: bold; 
+    margin-bottom: 30px;
+}
+.fd20{color: #d1904a; font-size: 20px;}
+.fg20{color: gray; font-size: 15px;}
+.fb20{color: black; font-size: 20px; margin-bottom: 30px;}
+.fb30{color: black; font-size: 30px; font-weight: bold; margin-bottom: 20px;}
 .fr20{color: brown; font-size: 20px;}
+
+
 
 
 
@@ -39,8 +63,10 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
 #navTop h1{margin-right: auto;font-size: 1.5em;}
 #topMenu li{float: left;width: 100px;}
 #topMenu li a{display: block;line-height: 40px;text-align: center;}
-#topMenu li:hover,
-#topMenu li.active{color: plum;}
+
+#topMenu li:hover a,
+#topMenu li.active a{color: #D1904A;}
+#topMenu li:nth-child(1).active a{color: initial;}
 
 
 ul{margin-bottom: 0;}
